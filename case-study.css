@@ -139,6 +139,19 @@
   margin: 72px 0;
 }
 
+/* ── Research block ──────────────────────────────────────────── */
+.cs-research-block {
+  max-width: 680px;
+  margin-top: 8px;
+}
+
+.cs-research-text {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-top: 8px;
+}
+
 /* ── Two column text ──────────────────────────────────────────── */
 .cs-two-col {
   display: grid;
