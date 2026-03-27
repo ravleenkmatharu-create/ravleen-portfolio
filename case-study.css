@@ -26,6 +26,34 @@
   color: #F8F6F1;
 }
 
+/* ── Light hero variant (extinguish) ───────────────────────── */
+.cs-hero--light {
+  background: var(--bg);
+}
+
+.cs-hero--light .cs-back {
+  color: var(--text-light);
+}
+.cs-hero--light .cs-back:hover { color: var(--text); }
+
+.cs-hero--light .cs-tag {
+  color: var(--text-muted);
+  background: var(--bg-subtle);
+  border-color: var(--border);
+}
+
+.cs-hero--light .cs-title   { color: var(--text); }
+.cs-hero--light .cs-subtitle { color: var(--text-muted); }
+
+.cs-hero--light .cs-meta-grid { border-top-color: var(--border); }
+.cs-hero--light .cs-meta-label { color: var(--text-light); }
+.cs-hero--light .cs-meta-value { color: var(--text); }
+
+.cs-hero--light .cs-hero-image img {
+  border-color: var(--border);
+  box-shadow: 0 20px 56px rgba(0,0,0,0.08);
+}
+
 /* Back link */
 .cs-back {
   display: inline-flex;
