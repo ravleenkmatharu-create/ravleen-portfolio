@@ -29,331 +29,406 @@
     </nav>
   </header>
 
-  <!-- ── HERO ─────────────────────────────────────────────────── -->
-  <section class="cs-hero cs-hero--compact">
-    <div class="container">
-      <a href="index.html#work" class="cs-back">← Back to Work</a>
-      <div class="cs-hero-meta">
-        <span class="cs-tag">Health Tech</span>
-        <span class="cs-tag">Mobile App</span>
-        <span class="cs-tag">UX Research</span>
-        <span class="cs-tag">Wearables</span>
-      </div>
-      <h1 class="cs-title">Extinguish</h1>
-      <p class="cs-subtitle">
-        A firefighter monitoring app integrating wearable sensors to collect
-        real-time exposure data — protecting the people who protect us.
-      </p>
-      <div class="cs-info-row">
-        <div class="cs-info-item">
-          <span class="cs-info-label">Timeline</span>
-          <span class="cs-info-value">Fall 2023 · 6 Weeks</span>
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 1 — HERO
+       Desktop: left text | right image
+       Mobile:  text first, image below
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cs-hero">
+    <div class="cs-container">
+      <a href="index.html#work" class="cs-back reveal">← Back to Work</a>
+
+      <div class="cs-hero-grid">
+        <!-- Left: title + meta -->
+        <div class="cs-hero-text reveal">
+          <div class="cs-tags">
+            <span class="cs-tag">Health Tech</span>
+            <span class="cs-tag">Mobile App</span>
+            <span class="cs-tag">UX Research</span>
+            <span class="cs-tag">Wearables</span>
+          </div>
+          <h1 class="cs-title">Extinguish</h1>
+          <p class="cs-subtitle">
+            A firefighter monitoring app integrating wearable sensors to collect
+            real-time exposure data — protecting the people who protect us.
+          </p>
+          <div class="cs-meta-grid">
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Timeline</span>
+              <span class="cs-meta-value">Fall 2023 · 6 Weeks</span>
+            </div>
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Role</span>
+              <span class="cs-meta-value">UX Researcher & UI Designer</span>
+            </div>
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Team</span>
+              <span class="cs-meta-value">4 Design Students</span>
+            </div>
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Platform</span>
+              <span class="cs-meta-value">iOS Mobile App</span>
+            </div>
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Tools</span>
+              <span class="cs-meta-value">Figma · Miro</span>
+            </div>
+          </div>
         </div>
-        <div class="cs-info-item">
-          <span class="cs-info-label">Role</span>
-          <span class="cs-info-value">UX Researcher & UI Designer</span>
-        </div>
-        <div class="cs-info-item">
-          <span class="cs-info-label">Team</span>
-          <span class="cs-info-value">4 Design Students</span>
-        </div>
-        <div class="cs-info-item">
-          <span class="cs-info-label">Platform</span>
-          <span class="cs-info-value">iOS Mobile App</span>
-        </div>
-        <div class="cs-info-item">
-          <span class="cs-info-label">Tools</span>
-          <span class="cs-info-value">Figma · Miro</span>
+
+        <!-- Right: hero image -->
+        <div class="cs-hero-image reveal reveal-delay-1">
+          <img
+            src="https://framerusercontent.com/images/jTXWcEcnyKQhMoZgDF2eFvjI9uU.png"
+            alt="Extinguish — high-fidelity app screens overview"
+          />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Hero image: hi-fi screens overview -->
-  <div class="cs-img-block cs-img-block--hero">
-    <img
-      src="https://framerusercontent.com/images/jTXWcEcnyKQhMoZgDF2eFvjI9uU.png"
-      alt="Extinguish app — high-fidelity screens overview"
-    />
-  </div>
-
-  <div class="cs-content container">
-
-    <!-- ── PROBLEM STATEMENT ─────────────────────────────────── -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Problem Statement</div>
-      <div class="cs-callout">
-        <span class="cs-callout-icon">🎯</span>
-        <blockquote>
-          "How might we simplify the process of reporting and documenting
-          environmental hazards and exposures faced by firefighters to support
-          long-term health monitoring?"
-        </blockquote>
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 2 — PROBLEM STATEMENT
+       Centered narrow text + highlight box
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="cs-narrow reveal">
+        <span class="cs-label">Problem Statement</span>
+        <div class="cs-highlight-box">
+          <span class="cs-highlight-icon">🎯</span>
+          <blockquote>
+            "How might we simplify the process of reporting and documenting
+            environmental hazards and exposures faced by firefighters to support
+            long-term health monitoring?"
+          </blockquote>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <div class="cs-divider reveal"></div>
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 3 — RESEARCH (Secondary)
+       Text block → 2 images side-by-side → 1 wider image
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cs-section cs-section--alt">
+    <div class="cs-container">
 
-    <!-- ── RESEARCH ──────────────────────────────────────────── -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Research</div>
-      <h2 class="cs-heading">Understanding the Reality</h2>
-
-      <!-- Secondary Research -->
-      <div class="cs-research-block">
+      <!-- Text -->
+      <div class="cs-narrow reveal">
+        <span class="cs-label">Research</span>
+        <h2 class="cs-heading">Understanding the Reality</h2>
         <h3 class="cs-subheading">Secondary Research</h3>
-        <p class="cs-research-text">Firefighters are routinely exposed to toxic gases including Carbon Monoxide (CO) and Hydrogen Cyanide (HCN). Studies show they are <strong>twice as likely as the general public</strong> to develop intestinal, liver, testicular, and prostate cancer. Historical solutions relied heavily on manual input, compromising accuracy and precision.</p>
+        <p class="cs-text">
+          Firefighters are routinely exposed to toxic gases including Carbon Monoxide (CO)
+          and Hydrogen Cyanide (HCN). Studies show they are <strong>twice as likely as the
+          general public</strong> to develop intestinal, liver, testicular, and prostate
+          cancer. Historical solutions relied heavily on manual input, compromising
+          accuracy and precision.
+        </p>
       </div>
 
-    </section>
+      <!-- 2 images side-by-side -->
+      <div class="cs-grid-2 reveal">
+        <figure class="cs-figure">
+          <img
+            src="https://framerusercontent.com/images/sHKZ9ACIh1JtV1p0nfYNLSMcouw.png"
+            alt="PSM — Physiological Status Monitoring System reference"
+          />
+          <figcaption>PSM — Physiological Status Monitoring System</figcaption>
+        </figure>
+        <figure class="cs-figure">
+          <img
+            src="https://framerusercontent.com/images/InvpCE2Jw2tCCTp85q6Axisv0AM.png"
+            alt="NFORS — National Fire Operations Reporting System reference"
+          />
+          <figcaption>NFORS — National Fire Operations Reporting System</figcaption>
+        </figure>
+      </div>
 
-  </div>
+      <!-- 1 wider image below -->
+      <figure class="cs-figure cs-figure--contained reveal">
+        <img
+          src="https://framerusercontent.com/images/lMpeRocxLNjSeSay8W5ujVUOU.png"
+          alt="Fire Engineering — PSM systems research reference"
+        />
+        <figcaption>Fire Engineering — PSM systems research reference</figcaption>
+      </figure>
 
-  <!-- PSM & NFORS reference images — directly under Secondary Research -->
-  <div class="cs-img-block cs-img-block--contained reveal">
-    <img
-      src="https://framerusercontent.com/images/sHKZ9ACIh1JtV1p0nfYNLSMcouw.png"
-      alt="PSM — Physiological Status Monitoring System reference"
-    />
-  </div>
-  <div class="cs-img-block cs-img-block--contained reveal" style="margin-top: 12px;">
-    <img
-      src="https://framerusercontent.com/images/InvpCE2Jw2tCCTp85q6Axisv0AM.png"
-      alt="NFORS — National Fire Operations Reporting System reference"
-    />
-  </div>
-  <div class="cs-img-block cs-img-block--contained reveal" style="margin-top: 12px;">
-    <img
-      src="https://framerusercontent.com/images/lMpeRocxLNjSeSay8W5ujVUOU.png"
-      alt="Research citation — Fire Engineering: PSM systems"
-    />
-  </div>
+    </div>
+  </section>
 
-  <div class="cs-content container">
-    <div class="cs-divider reveal"></div>
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Research continued</div>
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 4 — RESEARCH CONTINUED (Primary)
+       Text block → 1 image → 2 images in grid
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cs-section">
+    <div class="cs-container">
 
-      <!-- Primary Research -->
-      <div class="cs-research-block">
+      <!-- Text -->
+      <div class="cs-narrow reveal">
+        <span class="cs-label">Research Continued</span>
         <h3 class="cs-subheading">Primary Research</h3>
-        <p class="cs-research-text">We conducted <strong>8 interview sessions</strong> and <strong>8 observation sessions</strong> with active firefighters, conversations with a fire department Chief and a safety specialist, and synthesized insights through affinity mapping and three brainstorming sessions.</p>
+        <p class="cs-text">
+          We conducted <strong>8 interview sessions</strong> and <strong>8 observation
+          sessions</strong> with active firefighters, conversations with a fire department
+          Chief and a safety specialist, and synthesized insights through affinity mapping
+          and three brainstorming sessions.
+        </p>
       </div>
-    </section>
-  </div>
 
-  <!-- Ecosystem diagram -->
-  <div class="cs-img-block cs-img-block--contained reveal">
-    <img
-      src="https://framerusercontent.com/images/vr3sAdc4aXAuZGoHECXW77Bg6nU.png"
-      alt="System ecosystem — wearables, sensors, and app connection diagram"
-    />
-    <p class="cs-img-caption">System ecosystem — wearable sensors feed data into the app</p>
-  </div>
+      <!-- 1 image -->
+      <figure class="cs-figure cs-figure--contained reveal">
+        <img
+          src="https://framerusercontent.com/images/vr3sAdc4aXAuZGoHECXW77Bg6nU.png"
+          alt="System ecosystem — wearables, sensors, and app connection diagram"
+        />
+        <figcaption>System ecosystem — wearable sensors feed data into the app</figcaption>
+      </figure>
 
-  <!-- PSM T-shirt hardware photo -->
-  <div class="cs-img-block cs-img-block--screens-sm reveal">
-    <img
-      src="https://framerusercontent.com/images/MFflyX9S5Xd0NkbQcajrGTJub3Y.png"
-      alt="PSM T-shirt with embedded exposure sensor"
-    />
-    <p class="cs-img-caption">PSM T-shirt — wearable sensor technology already used by firefighters</p>
-  </div>
+      <!-- 2 images in grid -->
+      <div class="cs-grid-2 reveal">
+        <figure class="cs-figure">
+          <img
+            src="https://framerusercontent.com/images/MFflyX9S5Xd0NkbQcajrGTJub3Y.png"
+            alt="PSM T-shirt with embedded exposure sensor"
+          />
+          <figcaption>PSM T-shirt — wearable sensor used by firefighters</figcaption>
+        </figure>
+        <figure class="cs-figure">
+          <img
+            src="https://framerusercontent.com/images/ddlTMkHeIg5GrzoLIZadFYkt0Ss.png"
+            alt="User research — interview sessions and annotated findings"
+          />
+          <figcaption>User research — interview sessions and annotated findings</figcaption>
+        </figure>
+      </div>
 
-  <!-- User research photos: interviews, whiteboarding, field observation -->
-  <div class="cs-img-block cs-img-block--contained reveal">
-    <img
-      src="https://framerusercontent.com/images/ddlTMkHeIg5GrzoLIZadFYkt0Ss.png"
-      alt="User research — interview sessions and annotated findings"
-    />
-    <p class="cs-img-caption">User research — interview sessions and annotated findings</p>
-  </div>
+    </div>
+  </section>
 
-  <div class="cs-img-block cs-img-block--contained reveal">
-    <img
-      src="https://framerusercontent.com/images/OlnhVsPSzADSySYlk3SAptceWEs.png"
-      alt="Research artifacts — field photos, testing sessions, sketches"
-    />
-    <p class="cs-img-caption">Research artifacts — field photos, testing sessions, sketches</p>
-  </div>
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 5 — KEY TAKEAWAYS
+       3-column grid desktop / 1 column mobile
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cs-section cs-section--alt">
+    <div class="cs-container">
 
-  <div class="cs-content container">
+      <div class="cs-narrow reveal">
+        <span class="cs-label">Key Takeaways</span>
+        <h2 class="cs-heading">What the Research Revealed</h2>
+        <p class="cs-text">Six core design requirements emerged directly from what we heard and observed in the field.</p>
+      </div>
 
-    <div class="cs-divider reveal"></div>
-
-    <!-- ── KEY TAKEAWAYS ─────────────────────────────────────── -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Key Takeaways</div>
-      <h2 class="cs-heading">What the Research Revealed</h2>
-      <p class="cs-body">Six core design requirements emerged directly from what we heard and observed in the field.</p>
-
-      <div class="cs-takeaway-grid">
-        <div class="cs-takeaway reveal">
-          <div class="cs-takeaway-num">01</div>
+      <div class="cs-grid-3 cs-grid-3--cards">
+        <div class="cs-card reveal">
+          <span class="cs-card-num">01</span>
           <p>Eliminate manual exposure data entry to conserve time and minimize effort on scene.</p>
         </div>
-        <div class="cs-takeaway reveal reveal-delay-1">
-          <div class="cs-takeaway-num">02</div>
+        <div class="cs-card reveal reveal-delay-1">
+          <span class="cs-card-num">02</span>
           <p>Simplify documentation via autofill with a visual body-part selection interface.</p>
         </div>
-        <div class="cs-takeaway reveal reveal-delay-2">
-          <div class="cs-takeaway-num">03</div>
+        <div class="cs-card reveal reveal-delay-2">
+          <span class="cs-card-num">03</span>
           <p>Prevent additional weight burden on already-heavy protective equipment.</p>
         </div>
-        <div class="cs-takeaway reveal">
-          <div class="cs-takeaway-num">04</div>
+        <div class="cs-card reveal">
+          <span class="cs-card-num">04</span>
           <p>Enable real-time toxic gas data collection through existing wearable technology.</p>
         </div>
-        <div class="cs-takeaway reveal reveal-delay-1">
-          <div class="cs-takeaway-num">05</div>
+        <div class="cs-card reveal reveal-delay-1">
+          <span class="cs-card-num">05</span>
           <p>Provide contamination alerts and direct doctor appointment scheduling.</p>
         </div>
-        <div class="cs-takeaway reveal reveal-delay-2">
-          <div class="cs-takeaway-num">06</div>
+        <div class="cs-card reveal reveal-delay-2">
+          <span class="cs-card-num">06</span>
           <p>Support long-term health preservation by making exposure history shareable with providers.</p>
         </div>
       </div>
-    </section>
 
-    <div class="cs-divider reveal"></div>
+    </div>
+  </section>
 
-    <!-- ── DESIGN PROCESS ────────────────────────────────────── -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Design Process</div>
-      <h2 class="cs-heading">From Insight to Interface</h2>
-      <p class="cs-body">We moved from affinity mapping and Crazy 8's ideation through low-fidelity wireframing before arriving at high-fidelity Figma prototypes.</p>
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 6 — DESIGN PROCESS
+       4-column horizontal steps desktop / stacked mobile
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cs-section">
+    <div class="cs-container">
 
-      <div class="cs-process-steps">
-        <div class="cs-step reveal">
-          <div class="cs-step-num">01</div>
+      <div class="cs-narrow reveal">
+        <span class="cs-label">Design Process</span>
+        <h2 class="cs-heading">From Insight to Interface</h2>
+        <p class="cs-text">We moved from affinity mapping and Crazy 8's ideation through low-fidelity wireframing before arriving at high-fidelity Figma prototypes.</p>
+      </div>
+
+      <div class="cs-steps reveal">
+        <div class="cs-step">
+          <span class="cs-step-num">01</span>
           <h3>Affinity Mapping</h3>
           <p>Synthesized interview and observation data to surface patterns across firefighter pain points and unmet needs.</p>
         </div>
-        <div class="cs-step reveal reveal-delay-1">
-          <div class="cs-step-num">02</div>
+        <div class="cs-step">
+          <span class="cs-step-num">02</span>
           <h3>Crazy 8's Ideation</h3>
           <p>Two rapid ideation sessions generated a broad solution space, followed by a peer session to pressure-test ideas.</p>
         </div>
-        <div class="cs-step reveal reveal-delay-2">
-          <div class="cs-step-num">03</div>
+        <div class="cs-step">
+          <span class="cs-step-num">03</span>
           <h3>Low-Fidelity Wireframing</h3>
           <p>Explored core flows with lo-fi wireframes, assessing feasibility before committing to a direction.</p>
         </div>
-        <div class="cs-step reveal reveal-delay-3">
-          <div class="cs-step-num">04</div>
+        <div class="cs-step">
+          <span class="cs-step-num">04</span>
           <h3>High-Fidelity Design</h3>
           <p>Developed polished interactive Figma prototypes ready for usability testing and developer handoff.</p>
         </div>
       </div>
-    </section>
 
-  </div>
+    </div>
+  </section>
 
-  <!-- Whiteboard sketches from early ideation -->
-  <div class="cs-img-block cs-img-block--contained reveal">
-    <img
-      src="https://framerusercontent.com/images/cXLalDLhCnZAcEewaDVxbSE.png"
-      alt="Whiteboard sketches — early ideation and concept exploration"
-    />
-    <p class="cs-img-caption">Early ideation — whiteboard sketching and concept exploration</p>
-  </div>
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 7 — PROCESS IMAGES
+       2-col grid + 1 contained image
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cs-section cs-section--alt">
+    <div class="cs-container">
 
-  <!-- Lo-fi wireframes: 7 screens horizontal -->
-  <div class="cs-img-block cs-img-block--contained reveal">
-    <img
-      src="https://framerusercontent.com/images/cG9bkeRQRw0o34bpkAhn6nRHfbE.png"
-      alt="Low-fidelity wireframes — core app screens"
-    />
-    <p class="cs-img-caption">Low-fidelity wireframes — core app screens laid out for review</p>
-  </div>
-
-  <!-- Wireframe grid (tall: 2085×2616) — constrained width -->
-  <div class="cs-img-block cs-img-block--wireframe-grid reveal">
-    <img
-      src="https://framerusercontent.com/images/7GIS9MlgWoujfBXgy3OQ1xOYyU.png"
-      alt="Wireframe grid — full information architecture"
-    />
-    <p class="cs-img-caption">Full wireframe grid — information architecture and screen flows</p>
-  </div>
-
-  <div class="cs-content container">
-
-    <div class="cs-divider reveal"></div>
-
-    <!-- ── SOLUTION ───────────────────────────────────────────── -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Solution</div>
-      <h2 class="cs-heading">App Features & Capabilities</h2>
-      <p class="cs-body">Extinguish integrates with wearables already used by firefighters — adding intelligence without adding weight or friction to an already demanding job.</p>
-    </section>
-
-  </div>
-
-  <!-- Feature: Onboarding / Device Connection — 4 screens -->
-  <div class="cs-img-block cs-img-block--contained reveal">
-    <img
-      src="https://framerusercontent.com/images/HPd2FqKaa8V4Iibs24CWqRqpcE.png"
-      alt="Onboarding and device connection flow — 4 screens"
-    />
-    <p class="cs-img-caption">Onboarding & device connection — pairing wearable sensors to the app</p>
-  </div>
-
-  <!-- Feature: Reporting & Graphs — 6 screens (very wide) -->
-  <div class="cs-img-block cs-img-block--contained reveal">
-    <img
-      src="https://framerusercontent.com/images/hclkm61FUcHU0f4NLsBP80Trqo.png"
-      alt="Health reporting and exposure graph screens"
-    />
-    <p class="cs-img-caption">Health reporting — exposure history graphs and long-term trend tracking</p>
-  </div>
-
-  <!-- Feature: Trauma/Event Logging — 2 screens -->
-  <div class="cs-img-block cs-img-block--screens-sm reveal">
-    <img
-      src="https://framerusercontent.com/images/NiNfIx5vdOuuv0DqWJcrToxUfLY.png"
-      alt="Traumatic event logging — 2 screens with success confirmation"
-    />
-    <p class="cs-img-caption">Incident logging — quick-log flow with success confirmation</p>
-  </div>
-
-  <!-- Feature: Appointment Booking — 4 screens -->
-  <div class="cs-img-block cs-img-block--contained reveal">
-    <img
-      src="https://framerusercontent.com/images/BQhnvsprDhhb0iey9qirVBsY.png"
-      alt="Appointment booking flow — 4 screens"
-    />
-    <p class="cs-img-caption">Medical integration — doctor appointment scheduling flow</p>
-  </div>
-
-  <!-- Feature: Exposure Tracking — 2 screens -->
-  <div class="cs-img-block cs-img-block--screens-sm reveal">
-    <img
-      src="https://framerusercontent.com/images/lB7Qlh187vnJrHJ3I2fMygRUMu4.png"
-      alt="Exposure tracking detail screens"
-    />
-    <p class="cs-img-caption">Exposure tracking — detailed incident log and health timeline</p>
-  </div>
-
-  <div class="cs-content container">
-
-    <div class="cs-divider reveal"></div>
-
-    <!-- ── REFLECTION ────────────────────────────────────────── -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Reflection</div>
-      <h2 class="cs-heading">What I Learned</h2>
-      <p class="cs-body">This project reinforced how constraints sharpen design. The 6-week timeline forced ruthless prioritization — we had to identify the most valuable feature set and execute it well. Designing for a high-stress user context deepened my appreciation for cognitive load reduction: every screen needed to work for someone who is tired, stressed, and pressed for time. Connecting with real firefighters during research was the most grounding experience — their candor shaped every design decision we made.</p>
-      <div class="cs-callout cs-callout--neutral reveal">
-        <span class="cs-callout-icon">💡</span>
-        <blockquote>"The best interface is the one that disappears — where the user is thinking about their task, not the tool."</blockquote>
+      <div class="cs-grid-2 reveal">
+        <figure class="cs-figure">
+          <img
+            src="https://framerusercontent.com/images/cXLalDLhCnZAcEewaDVxbSE.png"
+            alt="Whiteboard sketches — early ideation"
+          />
+          <figcaption>Early ideation — whiteboard sketching</figcaption>
+        </figure>
+        <figure class="cs-figure">
+          <img
+            src="https://framerusercontent.com/images/OlnhVsPSzADSySYlk3SAptceWEs.png"
+            alt="Research artifacts — field photos and sketches"
+          />
+          <figcaption>Research artifacts — field photos and sketches</figcaption>
+        </figure>
       </div>
-    </section>
 
-  </div>
+      <figure class="cs-figure cs-figure--contained reveal">
+        <img
+          src="https://framerusercontent.com/images/cG9bkeRQRw0o34bpkAhn6nRHfbE.png"
+          alt="Low-fidelity wireframes — core app screens"
+        />
+        <figcaption>Low-fidelity wireframes — core app screens</figcaption>
+      </figure>
+
+      <figure class="cs-figure cs-figure--contained reveal">
+        <img
+          src="https://framerusercontent.com/images/7GIS9MlgWoujfBXgy3OQ1xOYyU.png"
+          alt="Full wireframe grid — information architecture and screen flows"
+          class="cs-img-constrained"
+        />
+        <figcaption>Full wireframe grid — information architecture</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 8 — SOLUTION
+       Text first → image groups in grids
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cs-section">
+    <div class="cs-container">
+
+      <div class="cs-narrow reveal">
+        <span class="cs-label">Solution</span>
+        <h2 class="cs-heading">App Features & Capabilities</h2>
+        <p class="cs-text">
+          Extinguish integrates with wearables already used by firefighters — adding
+          intelligence without adding weight or friction to an already demanding job.
+        </p>
+      </div>
+
+      <!-- Onboarding + Reporting (2-col) -->
+      <div class="cs-grid-2 reveal">
+        <figure class="cs-figure">
+          <img
+            src="https://framerusercontent.com/images/HPd2FqKaa8V4Iibs24CWqRqpcE.png"
+            alt="Onboarding and device connection flow"
+          />
+          <figcaption>Onboarding & device connection</figcaption>
+        </figure>
+        <figure class="cs-figure">
+          <img
+            src="https://framerusercontent.com/images/NiNfIx5vdOuuv0DqWJcrToxUfLY.png"
+            alt="Incident logging — quick-log flow"
+          />
+          <figcaption>Incident logging — quick-log flow</figcaption>
+        </figure>
+      </div>
+
+      <!-- Health reporting — contained single wide image -->
+      <figure class="cs-figure cs-figure--contained reveal">
+        <img
+          src="https://framerusercontent.com/images/hclkm61FUcHU0f4NLsBP80Trqo.png"
+          alt="Health reporting — exposure history graphs"
+        />
+        <figcaption>Health reporting — exposure history graphs and trend tracking</figcaption>
+      </figure>
+
+      <!-- Appointment + Exposure tracking (2-col) -->
+      <div class="cs-grid-2 reveal">
+        <figure class="cs-figure">
+          <img
+            src="https://framerusercontent.com/images/BQhnvsprDhhb0iey9qirVBsY.png"
+            alt="Doctor appointment scheduling flow"
+          />
+          <figcaption>Medical integration — appointment scheduling</figcaption>
+        </figure>
+        <figure class="cs-figure">
+          <img
+            src="https://framerusercontent.com/images/lB7Qlh187vnJrHJ3I2fMygRUMu4.png"
+            alt="Exposure tracking detail screens"
+          />
+          <figcaption>Exposure tracking — detailed health timeline</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       SECTION 9 — REFLECTION
+       Narrow text column + highlight quote box
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cs-section cs-section--alt">
+    <div class="cs-container">
+      <div class="cs-narrow reveal">
+        <span class="cs-label">Reflection</span>
+        <h2 class="cs-heading">What I Learned</h2>
+        <p class="cs-text">
+          This project reinforced how constraints sharpen design. The 6-week timeline
+          forced ruthless prioritization — we had to identify the most valuable feature
+          set and execute it well. Designing for a high-stress user context deepened my
+          appreciation for cognitive load reduction: every screen needed to work for
+          someone who is tired, stressed, and pressed for time. Connecting with real
+          firefighters during research was the most grounding experience — their candor
+          shaped every design decision we made.
+        </p>
+        <div class="cs-highlight-box cs-highlight-box--light reveal">
+          <span class="cs-highlight-icon">💡</span>
+          <blockquote>
+            "The best interface is the one that disappears — where the user is
+            thinking about their task, not the tool."
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- NEXT PROJECT -->
   <section class="cs-next">
-    <div class="container cs-next-inner">
+    <div class="cs-container cs-next-inner">
       <span class="cs-next-label">Next Project</span>
       <a href="ecowise.html" class="cs-next-link">
         Energy Insight — EcoWise <span class="arrow">→</span>
