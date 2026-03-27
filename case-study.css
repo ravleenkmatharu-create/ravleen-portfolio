@@ -465,6 +465,95 @@
   gap: 24px;
 }
 
+/* ── Hero — text only variant ────────────────────────────────── */
+.cs-hero--text-only {
+  padding-bottom: 64px;
+}
+.cs-hero--text-only .cs-subtitle { margin-bottom: 32px; }
+
+/* ── Full-bleed image ─────────────────────────────────────────── */
+.cs-fullbleed {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.cs-fullbleed img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* contained = max-width + padding, rounded corners */
+.cs-fullbleed--contained {
+  padding: 0 24px;
+  max-width: 1248px; /* var(--max-w) + padding */
+  margin: 48px auto;
+}
+
+.cs-fullbleed--contained img {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* portrait image — constrain width so it doesn't stretch too tall */
+.cs-img-portrait {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ── Insight bars — stacked, full width each ─────────────────── */
+.cs-insight-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 auto 8px;
+  padding: 0 24px;
+}
+
+.cs-insight-bars img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  display: block;
+}
+
+/* ── Two side-by-side screens ────────────────────────────────── */
+.cs-two-screens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 0 auto 8px;
+  padding: 0 24px;
+}
+
+.cs-two-screens img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+/* ── Split: wide + square ────────────────────────────────────── */
+.cs-split-screens {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 16px;
+  margin: 48px auto;
+  padding: 0 24px;
+  align-items: center;
+}
+
+.cs-split-screens img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: block;
+}
+
 /* ── Hero Screens (real images) ──────────────────────────────── */
 .cs-hero-screens {
   display: flex;
@@ -649,6 +738,13 @@
   .cs-image-strip { grid-template-columns: 1fr; }
   .cs-image-grid  { grid-template-columns: 1fr; }
   .cs-screens-gallery { grid-template-columns: repeat(2, 1fr); }
+  .cs-two-screens { grid-template-columns: 1fr; }
+  .cs-split-screens { grid-template-columns: 1fr; }
+  .cs-fullbleed--contained { padding: 0 16px; margin: 32px auto; }
+  .cs-insight-bars { padding: 0 16px; }
+  .cs-two-screens { padding: 0 16px; }
+  .cs-split-screens { padding: 0 16px; margin: 32px auto; }
+  .cs-img-portrait { max-width: 100%; }
   .cs-phone { width: 100px; }
   .cs-phone--center { width: 116px; }
 

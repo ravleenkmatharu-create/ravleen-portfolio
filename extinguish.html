@@ -29,8 +29,8 @@
     </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="cs-hero">
+  <!-- ── HERO ─────────────────────────────────────────────────── -->
+  <section class="cs-hero cs-hero--text-only">
     <div class="container">
       <a href="index.html#work" class="cs-back">← Back to Work</a>
       <div class="cs-hero-meta">
@@ -67,22 +67,18 @@
         </div>
       </div>
     </div>
-    <div class="cs-hero-visual cs-hero-visual--fire">
-      <div class="cs-hero-screens">
-        <div class="cs-hero-screen cs-hero-screen--left">
-          <img src="https://framerusercontent.com/images/lB7Qlh187vnJrHJ3I2fMygRUMu4.png" alt="Extinguish app screen" />
-        </div>
-        <div class="cs-hero-screen cs-hero-screen--center">
-          <img src="https://framerusercontent.com/images/cXLalDLhCnZAcEewaDVxbSE.png" alt="Extinguish app screen" />
-        </div>
-        <div class="cs-hero-screen cs-hero-screen--right">
-          <img src="https://framerusercontent.com/images/sHKZ9ACIh1JtV1p0nfYNLSMcouw.png" alt="Extinguish app screen" />
-        </div>
-      </div>
-    </div>
   </section>
 
-  <!-- CONTENT -->
+  <!-- ── HERO IMAGE (full-bleed) ──────────────────────────────── -->
+  <div class="cs-fullbleed">
+    <img
+      src="https://framerusercontent.com/images/jTXWcEcnyKQhMoZgDF2eFvjI9uU.png"
+      alt="Extinguish app overview"
+      loading="eager"
+    />
+  </div>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────────────── -->
   <main class="cs-main container">
 
     <!-- Problem Statement -->
@@ -115,29 +111,26 @@
           <p>We conducted <strong>8 interview sessions</strong> and <strong>8 observation sessions</strong> with active firefighters, held conversations with a fire department Chief and a safety specialist, and synthesized findings through affinity mapping and three brainstorming sessions.</p>
         </div>
       </div>
-
-      <div class="cs-insight-grid">
-        <div class="cs-insight-card">
-          <span class="cs-insight-num">2×</span>
-          <p>more likely than the general public to develop certain cancers due to on-job toxic exposures.</p>
-        </div>
-        <div class="cs-insight-card">
-          <span class="cs-insight-num">16</span>
-          <p>research sessions — 8 interviews and 8 observations — with active firefighters, a Chief, and a safety specialist.</p>
-        </div>
-        <div class="cs-insight-card">
-          <span class="cs-insight-num">3</span>
-          <p>brainstorming sessions including two Crazy 8's rounds and one peer ideation session to explore the solution space.</p>
-        </div>
-      </div>
     </section>
 
-    <!-- Research Images -->
-    <div class="cs-image-strip reveal">
-      <img src="https://framerusercontent.com/images/7GIS9MlgWoujfBXgy3OQ1xOYyU.png" alt="Research artifact" />
-      <img src="https://framerusercontent.com/images/BQhnvsprDhhb0iey9qirVBsY.png" alt="Research artifact" />
-      <img src="https://framerusercontent.com/images/HPd2FqKaa8V4Iibs24CWqRqpcE.png" alt="Research artifact" />
-    </div>
+  </main>
+
+  <!-- Research image — wide landscape -->
+  <div class="cs-fullbleed cs-fullbleed--contained reveal">
+    <img
+      src="https://framerusercontent.com/images/vr3sAdc4aXAuZGoHECXW77Bg6nU.png"
+      alt="Research findings"
+    />
+  </div>
+
+  <!-- Three insight bar images — stacked, each full width -->
+  <div class="cs-insight-bars container reveal">
+    <img src="https://framerusercontent.com/images/sHKZ9ACIh1JtV1p0nfYNLSMcouw.png" alt="Key insight" />
+    <img src="https://framerusercontent.com/images/InvpCE2Jw2tCCTp85q6Axisv0AM.png" alt="Key insight" />
+    <img src="https://framerusercontent.com/images/lMpeRocxLNjSeSay8W5ujVUOU.png"  alt="Key insight" />
+  </div>
+
+  <main class="cs-main container">
 
     <div class="cs-divider reveal"></div>
 
@@ -145,7 +138,7 @@
     <section class="cs-section reveal">
       <div class="cs-section-label">Key Takeaways</div>
       <h2 class="cs-heading">What the Research Revealed</h2>
-      <p class="cs-body">Six core design requirements emerged from our research synthesis — each directly tied to a real frustration or unmet need we heard from firefighters.</p>
+      <p class="cs-body">Six core design requirements emerged from our research synthesis — each one directly tied to a real frustration or unmet need we heard from firefighters.</p>
 
       <div class="cs-takeaway-grid">
         <div class="cs-takeaway reveal">
@@ -175,13 +168,30 @@
       </div>
     </section>
 
-    <!-- Wireframes -->
-    <div class="cs-image-grid reveal">
-      <img src="https://framerusercontent.com/images/InvpCE2Jw2tCCTp85q6Axisv0AM.png" alt="Wireframe" />
-      <img src="https://framerusercontent.com/images/MFflyX9S5Xd0NkbQcajrGTJub3Y.png" alt="Wireframe" />
-      <img src="https://framerusercontent.com/images/NiNfIx5vdOuuv0DqWJcrToxUfLY.png" alt="Wireframe" />
-      <img src="https://framerusercontent.com/images/OlnhVsPSzADSySYlk3SAptceWEs.png" alt="Wireframe" />
-    </div>
+    <div class="cs-divider reveal"></div>
+
+    <!-- Ideation -->
+    <section class="cs-section reveal">
+      <div class="cs-section-label">Ideation</div>
+      <h2 class="cs-heading">Brainstorming & Early Concepts</h2>
+      <p class="cs-body">Three brainstorming sessions — two Crazy 8's rounds and a peer ideation session — helped us rapidly explore the solution space before assessing feasibility and committing to a direction.</p>
+    </section>
+
+  </main>
+
+  <!-- Two mockup images side by side -->
+  <div class="cs-two-screens container reveal">
+    <img
+      src="https://framerusercontent.com/images/MFflyX9S5Xd0NkbQcajrGTJub3Y.png"
+      alt="Early concept mockup"
+    />
+    <img
+      src="https://framerusercontent.com/images/NiNfIx5vdOuuv0DqWJcrToxUfLY.png"
+      alt="Early concept mockup"
+    />
+  </div>
+
+  <main class="cs-main container">
 
     <div class="cs-divider reveal"></div>
 
@@ -189,7 +199,7 @@
     <section class="cs-section reveal">
       <div class="cs-section-label">Design Process</div>
       <h2 class="cs-heading">From Insight to Interface</h2>
-      <p class="cs-body">With research findings synthesized, we moved through ideation, feasibility assessment, and iterative wireframing before arriving at the final high-fidelity design.</p>
+      <p class="cs-body">With research findings synthesized, we moved through low-fidelity wireframing and feasibility assessment before developing the high-fidelity designs in Figma.</p>
 
       <div class="cs-process-steps">
         <div class="cs-step reveal">
@@ -200,31 +210,50 @@
         <div class="cs-step reveal reveal-delay-1">
           <div class="cs-step-num">02</div>
           <h3>Crazy 8's Ideation</h3>
-          <p>Two rapid ideation sessions generated a broad solution space, followed by a peer session to pressure-test ideas before committing.</p>
+          <p>Two rapid ideation sessions generated a broad solution space, followed by a peer session to pressure-test ideas.</p>
         </div>
         <div class="cs-step reveal reveal-delay-2">
           <div class="cs-step-num">03</div>
           <h3>Low-Fidelity Wireframing</h3>
-          <p>Explored core flows with sketches and lo-fi wireframes, assessing solution feasibility before committing to a visual direction.</p>
+          <p>Explored core flows with sketches and lo-fi wireframes, assessing solution feasibility before committing to a direction.</p>
         </div>
         <div class="cs-step reveal reveal-delay-3">
           <div class="cs-step-num">04</div>
           <h3>High-Fidelity Design</h3>
-          <p>Developed polished, interactive Figma prototypes following lo-fi iteration — ready for usability testing and developer handoff.</p>
+          <p>Developed polished interactive Figma prototypes following lo-fi iteration — ready for usability testing and handoff.</p>
         </div>
       </div>
     </section>
 
-    <!-- Process Images -->
-    <div class="cs-image-strip reveal">
-      <img src="https://framerusercontent.com/images/cG9bkeRQRw0o34bpkAhn6nRHfbE.png" alt="Design process" />
-      <img src="https://framerusercontent.com/images/ddlTMkHeIg5GrzoLIZadFYkt0Ss.png" alt="Design process" />
-      <img src="https://framerusercontent.com/images/hclkm61FUcHU0f4NLsBP80Trqo.png" alt="Design process" />
-    </div>
+  </main>
+
+  <!-- Process images — each full-bleed contained -->
+  <div class="cs-fullbleed cs-fullbleed--contained reveal">
+    <img
+      src="https://framerusercontent.com/images/BQhnvsprDhhb0iey9qirVBsY.png"
+      alt="Design wireframes"
+    />
+  </div>
+
+  <div class="cs-fullbleed cs-fullbleed--contained reveal">
+    <img
+      src="https://framerusercontent.com/images/HPd2FqKaa8V4Iibs24CWqRqpcE.png"
+      alt="Design iterations"
+    />
+  </div>
+
+  <div class="cs-fullbleed cs-fullbleed--contained reveal">
+    <img
+      src="https://framerusercontent.com/images/ddlTMkHeIg5GrzoLIZadFYkt0Ss.png"
+      alt="Design process"
+    />
+  </div>
+
+  <main class="cs-main container">
 
     <div class="cs-divider reveal"></div>
 
-    <!-- Solution / Features -->
+    <!-- Solution -->
     <section class="cs-section reveal">
       <div class="cs-section-label">Solution</div>
       <h2 class="cs-heading">App Features & Capabilities</h2>
@@ -235,14 +264,14 @@
           <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">📡</div>
           <div>
             <h3>Real-Time Data Collection</h3>
-            <p>Gathers physiological and environmental data from wearable sensors, tracking toxic gas exposure levels (CO, HCN) throughout firefighting operations without requiring manual input on scene.</p>
+            <p>Gathers physiological and environmental data from wearable sensors, tracking toxic gas exposure levels (CO, HCN) without requiring manual input on scene.</p>
           </div>
         </div>
         <div class="cs-feature reveal reveal-delay-1">
           <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">🔔</div>
           <div>
             <h3>Health Alerts</h3>
-            <p>Notifies users when contamination levels exceed safe thresholds, enabling immediate action and ensuring no exposure event goes unlogged or unaddressed.</p>
+            <p>Notifies users when contamination levels exceed safe thresholds, ensuring no exposure event goes unlogged or unaddressed.</p>
           </div>
         </div>
         <div class="cs-feature reveal">
@@ -256,37 +285,87 @@
           <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">✍️</div>
           <div>
             <h3>Documentation Automation</h3>
-            <p>An autofill feature pulls from sensor data to pre-populate exposure reports — reducing manual entry to a review-and-confirm interaction rather than a full data-entry task.</p>
+            <p>An autofill feature pulls from sensor data to pre-populate exposure reports — reducing manual entry to a review-and-confirm interaction.</p>
           </div>
         </div>
         <div class="cs-feature reveal">
           <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">🫁</div>
           <div>
             <h3>Visual Body-Part Interface</h3>
-            <p>A body-map selection tool lets firefighters quickly indicate affected areas without needing medical vocabulary — making the app accessible regardless of health literacy.</p>
+            <p>A body-map selection tool lets firefighters indicate affected areas without needing medical vocabulary.</p>
           </div>
         </div>
         <div class="cs-feature reveal reveal-delay-1">
           <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">📤</div>
           <div>
             <h3>Data Sharing & Clinical Guidance</h3>
-            <p>Exposure history is shareable with healthcare professionals in a structured, medical-friendly format — supporting timely testing recommendations and informed clinical decisions.</p>
+            <p>Exposure history is shareable with healthcare professionals in a structured, medical-friendly format supporting timely clinical decisions.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Final Screens Gallery -->
-    <div class="cs-section-label reveal" style="margin-top: 64px;">Final Screens</div>
-    <h2 class="cs-heading reveal">High-Fidelity Designs</h2>
-    <div class="cs-screens-gallery reveal">
-      <img src="https://framerusercontent.com/images/jTXWcEcnyKQhMoZgDF2eFvjI9uU.png" alt="Final screen" />
-      <img src="https://framerusercontent.com/images/lMpeRocxLNjSeSay8W5ujVUOU.png" alt="Final screen" />
-      <img src="https://framerusercontent.com/images/vr3sAdc4aXAuZGoHECXW77Bg6nU.png" alt="Final screen" />
-      <img src="https://framerusercontent.com/images/cXLalDLhCnZAcEewaDVxbSE.png" alt="Final screen" />
-      <img src="https://framerusercontent.com/images/lB7Qlh187vnJrHJ3I2fMygRUMu4.png" alt="Final screen" />
-      <img src="https://framerusercontent.com/images/sHKZ9ACIh1JtV1p0nfYNLSMcouw.png" alt="Final screen" />
-    </div>
+  </main>
+
+  <!-- Solution showcase — full-bleed images -->
+  <div class="cs-fullbleed cs-fullbleed--contained reveal">
+    <img
+      src="https://framerusercontent.com/images/hclkm61FUcHU0f4NLsBP80Trqo.png"
+      alt="Solution overview"
+    />
+  </div>
+
+  <div class="cs-fullbleed cs-fullbleed--contained reveal">
+    <img
+      src="https://framerusercontent.com/images/cG9bkeRQRw0o34bpkAhn6nRHfbE.png"
+      alt="Solution screens"
+    />
+  </div>
+
+  <!-- Two-column: wide image + square image -->
+  <div class="cs-split-screens container reveal">
+    <img
+      src="https://framerusercontent.com/images/cXLalDLhCnZAcEewaDVxbSE.png"
+      alt="App detail"
+      class="cs-split-wide"
+    />
+    <img
+      src="https://framerusercontent.com/images/lB7Qlh187vnJrHJ3I2fMygRUMu4.png"
+      alt="App detail"
+      class="cs-split-square"
+    />
+  </div>
+
+  <main class="cs-main container">
+
+    <div class="cs-divider reveal"></div>
+
+    <!-- Final Design -->
+    <section class="cs-section reveal">
+      <div class="cs-section-label">Final Design</div>
+      <h2 class="cs-heading">High-Fidelity Screens</h2>
+      <p class="cs-body">The final designs translate all research insights into a cohesive, gesture-aware mobile experience built for the realities of a firefighter's day.</p>
+    </section>
+
+  </main>
+
+  <!-- Tall portrait final design image -->
+  <div class="cs-fullbleed cs-fullbleed--contained reveal">
+    <img
+      src="https://framerusercontent.com/images/7GIS9MlgWoujfBXgy3OQ1xOYyU.png"
+      alt="Final high-fidelity design"
+      class="cs-img-portrait"
+    />
+  </div>
+
+  <div class="cs-fullbleed cs-fullbleed--contained reveal">
+    <img
+      src="https://framerusercontent.com/images/OlnhVsPSzADSySYlk3SAptceWEs.png"
+      alt="Final design screens"
+    />
+  </div>
+
+  <main class="cs-main container">
 
     <div class="cs-divider reveal"></div>
 
