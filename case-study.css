@@ -465,10 +465,64 @@
   gap: 24px;
 }
 
+/* ── Subheading ───────────────────────────────────────────────── */
+.cs-subheading {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.cs-two-col p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* ── Takeaway Grid ────────────────────────────────────────────── */
+.cs-takeaway-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.cs-takeaway {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.cs-takeaway:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.07);
+}
+
+.cs-takeaway-num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  opacity: 0.3;
+  line-height: 1;
+  margin-bottom: 14px;
+  letter-spacing: -0.02em;
+}
+
+.cs-takeaway p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
 /* ── Responsive ───────────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .cs-process-steps { grid-template-columns: repeat(2, 1fr); }
-  .cs-insight-grid  { grid-template-columns: repeat(2, 1fr); }
+  .cs-process-steps  { grid-template-columns: repeat(2, 1fr); }
+  .cs-insight-grid   { grid-template-columns: repeat(2, 1fr); }
+  .cs-takeaway-grid  { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
@@ -480,6 +534,7 @@
   .cs-two-col { grid-template-columns: 1fr; gap: 36px; }
   .cs-process-steps { grid-template-columns: 1fr 1fr; }
   .cs-insight-grid  { grid-template-columns: 1fr; }
+  .cs-takeaway-grid { grid-template-columns: 1fr; }
 
   .cs-info-row { gap: 0; }
   .cs-info-item { padding: 0 24px 28px 0; }

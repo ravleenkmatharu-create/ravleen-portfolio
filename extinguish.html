@@ -36,12 +36,13 @@
       <div class="cs-hero-meta">
         <span class="cs-tag">Health Tech</span>
         <span class="cs-tag">Mobile App</span>
-        <span class="cs-tag">Research</span>
+        <span class="cs-tag">UX Research</span>
+        <span class="cs-tag">Wearables</span>
       </div>
       <h1 class="cs-title">Extinguish</h1>
       <p class="cs-subtitle">
-        A firefighter-focused app for logging environmental exposures and
-        supporting long-term health monitoring.
+        A firefighter monitoring app integrating wearable sensors to collect
+        real-time exposure data — protecting the people who protect us.
       </p>
       <div class="cs-info-row">
         <div class="cs-info-item">
@@ -50,7 +51,11 @@
         </div>
         <div class="cs-info-item">
           <span class="cs-info-label">Role</span>
-          <span class="cs-info-value">UX Researcher & Designer</span>
+          <span class="cs-info-value">UX Researcher & UI Designer</span>
+        </div>
+        <div class="cs-info-item">
+          <span class="cs-info-label">Team</span>
+          <span class="cs-info-value">4 Design Students</span>
         </div>
         <div class="cs-info-item">
           <span class="cs-info-label">Platform</span>
@@ -58,7 +63,7 @@
         </div>
         <div class="cs-info-item">
           <span class="cs-info-label">Tools</span>
-          <span class="cs-info-value">Figma, Miro</span>
+          <span class="cs-info-value">Figma · Miro</span>
         </div>
       </div>
     </div>
@@ -139,111 +144,170 @@
   <!-- CONTENT -->
   <main class="cs-main container">
 
-    <!-- Overview -->
+    <!-- Problem Statement -->
     <section class="cs-section reveal">
-      <div class="cs-section-label">Overview</div>
-      <div class="cs-two-col">
-        <div>
-          <h2 class="cs-heading">The Problem</h2>
-          <p>Firefighters face a silent epidemic — chronic exposure to carcinogens, toxic smoke, and hazardous chemicals that accumulate over a career. Most lack a reliable way to log these exposures or track patterns over time, making it difficult to advocate for their own health with medical professionals.</p>
-        </div>
-        <div>
-          <h2 class="cs-heading">The Goal</h2>
-          <p>Design a mobile app that empowers firefighters to log environmental exposures after incidents, visualize their history, and generate sharable health reports — helping them take proactive control of their long-term wellbeing.</p>
-        </div>
+      <div class="cs-section-label">Problem Statement</div>
+      <div class="cs-callout">
+        <span class="cs-callout-icon">🎯</span>
+        <blockquote>
+          "How might we simplify the process of reporting and documenting environmental
+          hazards and exposures faced by firefighters to support long-term health monitoring?"
+        </blockquote>
       </div>
     </section>
 
-    <!-- Divider -->
     <div class="cs-divider reveal"></div>
 
     <!-- Research -->
     <section class="cs-section reveal">
-      <div class="cs-section-label">Discovery</div>
-      <h2 class="cs-heading">Understanding the User</h2>
-      <p class="cs-body">I began with contextual research — reading about firefighter occupational health, reviewing studies on cancer rates in the profession, and conducting interviews to understand the daily reality of exposure tracking.</p>
+      <div class="cs-section-label">Research</div>
+      <h2 class="cs-heading">Understanding the Reality</h2>
+      <p class="cs-body">We conducted both secondary and primary research to deeply understand the exposure risks firefighters face and how existing documentation systems were failing them.</p>
 
-      <div class="cs-insight-grid">
-        <div class="cs-insight-card">
-          <span class="cs-insight-num">66%</span>
-          <p>of firefighter deaths are attributed to cancer — nearly double the general population rate.</p>
+      <div class="cs-two-col" style="margin-bottom: 48px;">
+        <div>
+          <h3 class="cs-subheading">Secondary Research</h3>
+          <p>Firefighters are routinely exposed to toxic gases including Carbon Monoxide (CO) and Hydrogen Cyanide (HCN). Studies show they are <strong>twice as likely as the general public</strong> to develop intestinal, liver, testicular, and prostate cancer. Historical solutions relied heavily on manual input, compromising accuracy and precision.</p>
         </div>
-        <div class="cs-insight-card">
-          <span class="cs-insight-num">0</span>
-          <p>standardized tools exist for personal exposure logging that firefighters actually use consistently.</p>
-        </div>
-        <div class="cs-insight-card">
-          <span class="cs-insight-num">3</span>
-          <p>key user pain points emerged: time pressure on-scene, lack of medical vocabulary, and data portability.</p>
+        <div>
+          <h3 class="cs-subheading">Primary Research</h3>
+          <p>We conducted <strong>8 interview sessions</strong> and <strong>8 observation sessions</strong> with active firefighters, held conversations with a fire department Chief and a safety specialist, and synthesized findings through affinity mapping and three brainstorming sessions.</p>
         </div>
       </div>
 
-      <div class="cs-callout">
-        <span class="cs-callout-icon">💬</span>
-        <blockquote>"I know I've been exposed to bad stuff over the years, but I've never had a way to show my doctor what I've been through."</blockquote>
-        <cite>— Firefighter interview participant</cite>
+      <div class="cs-insight-grid">
+        <div class="cs-insight-card">
+          <span class="cs-insight-num">2×</span>
+          <p>more likely than the general public to develop certain cancers due to on-job toxic exposures.</p>
+        </div>
+        <div class="cs-insight-card">
+          <span class="cs-insight-num">16</span>
+          <p>research sessions — 8 interviews and 8 observations — with active firefighters, a Chief, and a safety specialist.</p>
+        </div>
+        <div class="cs-insight-card">
+          <span class="cs-insight-num">3</span>
+          <p>brainstorming sessions including two Crazy 8's rounds and one peer ideation session to explore the solution space.</p>
+        </div>
       </div>
     </section>
 
     <div class="cs-divider reveal"></div>
 
-    <!-- Process -->
+    <!-- Key Takeaways -->
+    <section class="cs-section reveal">
+      <div class="cs-section-label">Key Takeaways</div>
+      <h2 class="cs-heading">What the Research Revealed</h2>
+      <p class="cs-body">Six core design requirements emerged from our research synthesis — each directly tied to a real frustration or unmet need we heard from firefighters.</p>
+
+      <div class="cs-takeaway-grid">
+        <div class="cs-takeaway reveal">
+          <div class="cs-takeaway-num">01</div>
+          <p>Eliminate manual exposure data entry to conserve time and minimize effort on scene.</p>
+        </div>
+        <div class="cs-takeaway reveal reveal-delay-1">
+          <div class="cs-takeaway-num">02</div>
+          <p>Simplify documentation via autofill functionality with a visual body-part selection interface.</p>
+        </div>
+        <div class="cs-takeaway reveal reveal-delay-2">
+          <div class="cs-takeaway-num">03</div>
+          <p>Prevent additional weight burden on already-heavy protective equipment.</p>
+        </div>
+        <div class="cs-takeaway reveal">
+          <div class="cs-takeaway-num">04</div>
+          <p>Enable real-time toxic gas exposure data collection through existing wearable technology.</p>
+        </div>
+        <div class="cs-takeaway reveal reveal-delay-1">
+          <div class="cs-takeaway-num">05</div>
+          <p>Provide contamination alerts and direct doctor appointment scheduling capabilities.</p>
+        </div>
+        <div class="cs-takeaway reveal reveal-delay-2">
+          <div class="cs-takeaway-num">06</div>
+          <p>Support long-term health preservation by making exposure history shareable with medical providers.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="cs-divider reveal"></div>
+
+    <!-- Design Process -->
     <section class="cs-section reveal">
       <div class="cs-section-label">Design Process</div>
       <h2 class="cs-heading">From Insight to Interface</h2>
-      <p class="cs-body">With research findings in hand, I mapped user flows, sketched low-fidelity concepts, and iterated through wireframes before moving into high-fidelity prototypes in Figma.</p>
+      <p class="cs-body">With research findings synthesized, we moved through ideation, feasibility assessment, and iterative wireframing before arriving at the final high-fidelity design.</p>
 
       <div class="cs-process-steps">
         <div class="cs-step reveal">
           <div class="cs-step-num">01</div>
           <h3>Affinity Mapping</h3>
-          <p>Synthesized interview data to identify recurring themes around pain points, behaviors, and motivations.</p>
+          <p>Synthesized interview and observation data to surface patterns across firefighter pain points, behaviors, and unmet needs.</p>
         </div>
         <div class="cs-step reveal reveal-delay-1">
           <div class="cs-step-num">02</div>
-          <h3>User Flow Mapping</h3>
-          <p>Defined the core task flows: incident logging, exposure history review, and report generation.</p>
+          <h3>Crazy 8's Ideation</h3>
+          <p>Two rapid ideation sessions generated a broad solution space, followed by a peer session to pressure-test ideas before committing.</p>
         </div>
         <div class="cs-step reveal reveal-delay-2">
           <div class="cs-step-num">03</div>
-          <h3>Wireframing</h3>
-          <p>Created low-fidelity sketches focusing on speed of entry — users needed to log an exposure in under 60 seconds.</p>
+          <h3>Low-Fidelity Wireframing</h3>
+          <p>Explored core flows with sketches and lo-fi wireframes, assessing solution feasibility before committing to a visual direction.</p>
         </div>
         <div class="cs-step reveal reveal-delay-3">
           <div class="cs-step-num">04</div>
-          <h3>Prototyping & Testing</h3>
-          <p>Built interactive Figma prototypes and conducted usability tests with 4 participants to validate and refine.</p>
+          <h3>High-Fidelity Design</h3>
+          <p>Developed polished, interactive Figma prototypes following lo-fi iteration — ready for usability testing and developer handoff.</p>
         </div>
       </div>
     </section>
 
     <div class="cs-divider reveal"></div>
 
-    <!-- Solution -->
+    <!-- Solution / Features -->
     <section class="cs-section reveal">
       <div class="cs-section-label">Solution</div>
-      <h2 class="cs-heading">Key Design Decisions</h2>
+      <h2 class="cs-heading">App Features & Capabilities</h2>
+      <p class="cs-body">Extinguish integrates with wearables and sensors already used by firefighters — adding intelligence without adding weight or friction to an already demanding job.</p>
 
       <div class="cs-feature-list">
         <div class="cs-feature reveal">
-          <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">🔥</div>
+          <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">📡</div>
           <div>
-            <h3>Quick-Log Incident Entry</h3>
-            <p>A streamlined form reduces entry to essential fields — incident type, substances, duration, and protective gear worn. Designed to be completed in under 60 seconds post-incident.</p>
+            <h3>Real-Time Data Collection</h3>
+            <p>Gathers physiological and environmental data from wearable sensors, tracking toxic gas exposure levels (CO, HCN) throughout firefighting operations without requiring manual input on scene.</p>
           </div>
         </div>
         <div class="cs-feature reveal reveal-delay-1">
-          <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">📊</div>
+          <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">🔔</div>
           <div>
-            <h3>Exposure Timeline</h3>
-            <p>A visual history of logged exposures, grouped by incident type and date. Firefighters can spot patterns and share their timeline directly with healthcare providers.</p>
+            <h3>Health Alerts</h3>
+            <p>Notifies users when contamination levels exceed safe thresholds, enabling immediate action and ensuring no exposure event goes unlogged or unaddressed.</p>
           </div>
         </div>
-        <div class="cs-feature reveal reveal-delay-2">
-          <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">📄</div>
+        <div class="cs-feature reveal">
+          <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">🏥</div>
           <div>
-            <h3>Shareable Health Reports</h3>
-            <p>One-tap PDF report generation summarizing exposure history in medical-friendly language — bridging the gap between field experience and clinical conversation.</p>
+            <h3>Medical Integration</h3>
+            <p>Enables direct appointment scheduling with healthcare providers from within the app, bridging the gap between field exposure and clinical follow-up.</p>
+          </div>
+        </div>
+        <div class="cs-feature reveal reveal-delay-1">
+          <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">✍️</div>
+          <div>
+            <h3>Documentation Automation</h3>
+            <p>An autofill feature pulls from sensor data to pre-populate exposure reports — reducing manual entry to a review-and-confirm interaction rather than a full data-entry task.</p>
+          </div>
+        </div>
+        <div class="cs-feature reveal">
+          <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">🫁</div>
+          <div>
+            <h3>Visual Body-Part Interface</h3>
+            <p>A body-map selection tool lets firefighters quickly indicate affected areas without needing medical vocabulary — making the app accessible regardless of health literacy.</p>
+          </div>
+        </div>
+        <div class="cs-feature reveal reveal-delay-1">
+          <div class="cs-feature-icon" style="background:#FFF3EE; color:#C64A1A">📤</div>
+          <div>
+            <h3>Data Sharing & Clinical Guidance</h3>
+            <p>Exposure history is shareable with healthcare professionals in a structured, medical-friendly format — supporting timely testing recommendations and informed clinical decisions.</p>
           </div>
         </div>
       </div>
@@ -255,7 +319,7 @@
     <section class="cs-section reveal">
       <div class="cs-section-label">Reflection</div>
       <h2 class="cs-heading">What I Learned</h2>
-      <p class="cs-body">This project reinforced how constraints can sharpen design. The 6-week timeline forced prioritization — I had to identify the single most valuable feature set and execute it well rather than building everything. Designing for a high-stress user context also deepened my appreciation for cognitive load reduction: every screen needed to work for someone who is tired, stressed, and pressed for time.</p>
+      <p class="cs-body">This project reinforced how constraints sharpen design. The 6-week timeline forced ruthless prioritization — we had to identify the most valuable feature set and execute it well rather than building everything. Designing for a high-stress user context deepened my appreciation for cognitive load reduction: every screen needed to work for someone who is tired, stressed, and pressed for time. Connecting with real firefighters during research was the most grounding experience — their candor shaped every design decision we made.</p>
       <div class="cs-callout cs-callout--neutral reveal">
         <span class="cs-callout-icon">💡</span>
         <blockquote>"The best interface is the one that disappears — where the user is thinking about their task, not the tool."</blockquote>
