@@ -43,6 +43,10 @@
   background: var(--bg);
 }
 
+.cs-hero--light::before {
+  background: #F5F5F4;
+}
+
 .cs-hero--light .cs-back {
   color: var(--text-light);
 }
