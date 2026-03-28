@@ -221,7 +221,7 @@
    ══════════════════════════════════════════════════════════════ */
 
 .cs-section {
-  padding: var(--sp-8) 0;
+  padding: var(--sp-6) 0;
 }
 
 .cs-section--alt {
@@ -317,7 +317,7 @@
 .cs-divider {
   height: 1px;
   background: var(--border);
-  margin: var(--sp-6) 0;
+  margin: var(--sp-4) 0;
 }
 
 /* ══════════════════════════════════════════════════════════════
