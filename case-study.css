@@ -886,24 +886,25 @@
   line-height: 1.8;
 }
 
-/* Feature section images — proportional and properly sized */
+/* Feature section images — all same size, proportional, full image visible */
 .cs-feature-image {
   width: 100%;
-  max-width: 420px;
+  max-width: 380px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--bg-subtle);
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  padding: 20px;
+  padding: 16px;
   box-sizing: border-box;
   margin: 0;
 }
 
 .cs-feature-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
   border: none;
   display: block;
