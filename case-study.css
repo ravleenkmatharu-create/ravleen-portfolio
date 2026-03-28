@@ -209,18 +209,17 @@
    ══════════════════════════════════════════════════════════════ */
 
 .cs-section {
-  padding: var(--sp-14) 0;
-  background: #FFFFFF;
+  padding: var(--sp-12) 0;
 }
 
 .cs-section--alt {
-  background: #F8F8F7;
+  background: var(--bg-subtle);
 }
 
 /* Constrain content width for readability */
 .cs-section > .cs-container,
 .cs-main {
-  max-width: 920px;
+  max-width: 900px;
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -247,11 +246,11 @@
 /* Section heading */
 .cs-heading {
   font-family: var(--font-display);
-  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
   font-weight: 700;
   color: var(--text);
-  line-height: 1.3;
-  margin-bottom: var(--sp-4);
+  line-height: 1.2;
+  margin-bottom: var(--sp-2);
   letter-spacing: -0.01em;
 }
 
@@ -268,14 +267,13 @@
 .cs-text {
   font-size: 15px;
   color: var(--text-muted);
-  line-height: 1.9;
+  line-height: 1.85;
   margin-bottom: 0;
-  max-width: 780px;
-  letter-spacing: 0.3px;
+  max-width: 750px;
 }
 
 .cs-text + .cs-text {
-  margin-top: var(--sp-4);
+  margin-top: var(--sp-3);
 }
 
 /* Legacy body text class */
@@ -306,8 +304,8 @@
 /* Divider */
 .cs-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border) 20%, var(--border) 80%, transparent);
-  margin: var(--sp-12) 0;
+  background: var(--border);
+  margin: var(--sp-10) 0;
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -423,14 +421,13 @@
 
 .cs-section-bar-title {
   font-family: var(--font-body);
-  font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
   font-weight: 700;
   color: var(--text);
-  border-left: 4px solid var(--accent);
-  padding-left: 16px;
-  margin-bottom: var(--sp-5);
-  line-height: 1.4;
-  letter-spacing: -0.005em;
+  border-left: 3px solid var(--accent);
+  padding-left: 14px;
+  margin-bottom: var(--sp-3);
+  line-height: 1.3;
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -513,13 +510,8 @@
   display: flex;
   align-items: flex-start;
   gap: var(--sp-3);
-  padding: var(--sp-4) 0;
+  padding: var(--sp-3) 0;
   border-top: 1px solid var(--border);
-  transition: opacity 0.3s var(--ease);
-}
-
-.cs-takeaway-item:hover {
-  opacity: 0.9;
 }
 
 .cs-takeaway-num {
@@ -546,19 +538,14 @@
   font-size: 16px;
   font-weight: 700;
   color: var(--text);
-  line-height: 1.8;
-  margin-top: var(--sp-5);
-  margin-bottom: var(--sp-6);
-  max-width: 800px;
-  padding: var(--sp-5) var(--sp-5);
-  background: #F8F8F7;
-  border-left: 4px solid var(--accent);
+  line-height: 1.75;
+  margin-top: var(--sp-4);
+  margin-bottom: var(--sp-5);
+  max-width: 750px;
+  padding: var(--sp-4);
+  background: var(--bg-subtle);
+  border-left: 3px solid var(--accent);
   border-radius: var(--radius);
-  transition: box-shadow 0.3s var(--ease);
-}
-
-.cs-hmw-statement:hover {
-  box-shadow: 0 8px 24px rgba(232,82,42,0.08);
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -753,8 +740,8 @@
 }
 
 .cs-step:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
 .cs-step-num {
@@ -804,8 +791,8 @@
 }
 
 .cs-insight-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
 .cs-insight-num {
@@ -849,8 +836,8 @@
 }
 
 .cs-feature:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
 }
 
 .cs-feature-icon {
@@ -926,19 +913,14 @@
   grid-template-columns: 0.85fr 1.15fr;
   gap: var(--sp-8);
   align-items: center;
-  padding: var(--sp-8) 0;
+  padding: var(--sp-7) 0;
   border-bottom: 1px solid var(--border);
-  transition: opacity 0.3s var(--ease);
-}
-
-.cs-feature-row:hover {
-  opacity: 0.98;
 }
 
 .cs-feature-row:last-child { border-bottom: none; }
 
 .cs-feature-row:not(:last-child) {
-  margin-bottom: 0;
+  margin-bottom: var(--sp-2);
 }
 
 /* Reverse: image left, text right */
@@ -982,17 +964,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFFFFF;
+  background: var(--bg-subtle);
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  padding: 28px;
+  padding: 24px;
   box-sizing: border-box;
   margin: 0;
-  transition: box-shadow 0.3s var(--ease), transform 0.3s var(--ease);
-}
-
-.cs-feature-image:hover {
-  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
 }
 
 .cs-feature-image img {
