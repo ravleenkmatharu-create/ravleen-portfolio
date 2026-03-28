@@ -957,9 +957,10 @@
   max-width: 380px;
 }
 
-/* Feature section images — proportional, full image visible */
+/* Feature section images — consistent size, all same as image 03 */
 .cs-feature-image {
   width: 100%;
+  aspect-ratio: 5 / 4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -969,12 +970,11 @@
   padding: 24px;
   box-sizing: border-box;
   margin: 0;
-  min-height: 300px;
 }
 
 .cs-feature-image img {
   max-width: 100%;
-  max-height: 400px;
+  max-height: 100%;
   width: auto;
   height: auto;
   object-fit: contain;
