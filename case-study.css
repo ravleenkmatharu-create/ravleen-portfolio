@@ -347,7 +347,7 @@
 
 /* Constrained image — used for tall wireframe grid (2085×2616) */
 .cs-img-constrained {
-  max-width: 750px;
+  max-width: 100%;
   margin: 0 auto;
   display: block;
 }
