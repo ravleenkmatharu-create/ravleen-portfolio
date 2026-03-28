@@ -90,27 +90,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ── Parallax tilt on Hero Card ────────────────────────────────
-const heroCard = document.querySelector('.hero-card');
+// ── Parallax tilt on interactive elements ─────────────────────
+function enableParallaxTilt(selector) {
+  const element = document.querySelector(selector);
 
-if (heroCard && window.matchMedia('(hover: hover)').matches) {
-  heroCard.addEventListener('mousemove', (e) => {
-    const rect   = heroCard.getBoundingClientRect();
-    const cx     = rect.left + rect.width  / 2;
-    const cy     = rect.top  + rect.height / 2;
-    const dx     = (e.clientX - cx) / (rect.width  / 2);
-    const dy     = (e.clientY - cy) / (rect.height / 2);
-    const rotX   = (-dy * 8).toFixed(2);
-    const rotY   = ( dx * 8).toFixed(2);
-    heroCard.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
-  });
+  if (element && window.matchMedia('(hover: hover)').matches) {
+    element.addEventListener('mousemove', (e) => {
+      const rect   = element.getBoundingClientRect();
+      const cx     = rect.left + rect.width  / 2;
+      const cy     = rect.top  + rect.height / 2;
+      const dx     = (e.clientX - cx) / (rect.width  / 2);
+      const dy     = (e.clientY - cy) / (rect.height / 2);
+      const rotX   = (-dy * 8).toFixed(2);
+      const rotY   = ( dx * 8).toFixed(2);
+      element.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
+    });
 
-  heroCard.addEventListener('mouseleave', () => {
-    heroCard.style.transition = 'transform 0.5s cubic-bezier(0.4,0,0.2,1)';
-    heroCard.style.transform  = '';
-    setTimeout(() => { heroCard.style.transition = ''; }, 500);
-  });
+    element.addEventListener('mouseleave', () => {
+      element.style.transition = 'transform 0.5s cubic-bezier(0.4,0,0.2,1)';
+      element.style.transform  = '';
+      setTimeout(() => { element.style.transition = ''; }, 500);
+    });
+  }
 }
+
+// Apply parallax to hero card and case study hero images
+enableParallaxTilt('.hero-card');
+enableParallaxTilt('.cs-hero-image');
 
 // ── Counter animation on stat numbers ────────────────────────
 function animateCounter(el, target, duration = 1200) {
