@@ -51,18 +51,18 @@
 .cs-hero--light .cs-tag {
   color: var(--text);
   background: #ECECEB;
-  border-color: #D9D9D6;
+  border-color: #CCCCCA;
 }
 
 .cs-hero--light .cs-title   { color: var(--text); }
 .cs-hero--light .cs-subtitle { color: var(--text-muted); }
 
-.cs-hero--light .cs-meta-grid { border-top-color: #D9D9D6; }
+.cs-hero--light .cs-meta-grid { border-top-color: #CCCCCA; }
 .cs-hero--light .cs-meta-label { color: var(--text-muted); }
 .cs-hero--light .cs-meta-value { color: var(--text); }
 
 .cs-hero--light .cs-hero-image img {
-  border-color: var(--border);
+  border-color: #CCCCCA;
   box-shadow: 0 20px 56px rgba(0,0,0,0.08);
 }
 
