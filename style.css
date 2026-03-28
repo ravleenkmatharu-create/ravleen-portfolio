@@ -539,6 +539,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: var(--radius);
 }
 
 .project-visual--fire     { background: linear-gradient(140deg, #1A0800 0%, #8B2500 55%, #C64A1A 100%); }
