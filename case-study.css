@@ -77,7 +77,10 @@
   margin-bottom: var(--sp-4);
   transition: color 0.2s, gap 0.2s;
 }
-.cs-back:hover { color: #F8F6F1; gap: 14px; }
+.cs-back:hover {
+  color: #F8F6F1;
+  gap: 14px;
+}
 
 /* Tags row */
 .cs-tags {
@@ -249,10 +252,17 @@
   display: block;
   font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: var(--sp-2);
+  opacity: 0;
+  animation: fadeIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Section heading */
@@ -301,10 +311,12 @@
 .cs-section-label {
   font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: var(--sp-2);
+  opacity: 0;
+  animation: fadeIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
 }
 
 /* Section heading bar — improved spacing */
@@ -316,7 +328,7 @@
 /* Divider */
 .cs-divider {
   height: 1px;
-  background: var(--border);
+  background: linear-gradient(to right, transparent, var(--border) 20%, var(--border) 80%, transparent);
   margin: var(--sp-4) 0;
 }
 
@@ -344,6 +356,8 @@
 /* Figure base — full width within its parent */
 .cs-figure {
   margin: var(--sp-5) auto;
+  overflow: hidden;
+  border-radius: var(--radius);
 }
 
 .cs-figure img {
@@ -353,6 +367,11 @@
   border-radius: var(--radius);
   border: 1px solid var(--border);
   background: var(--bg-subtle);
+  transition: transform 0.5s ease;
+}
+
+.cs-figure:hover img {
+  transform: scale(1.02);
 }
 
 .cs-figure figcaption {
@@ -433,13 +452,29 @@
 
 .cs-section-bar-title {
   font-family: var(--font-body);
-  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
   font-weight: 700;
   color: var(--text);
-  border-left: 3px solid var(--accent);
-  padding-left: 14px;
   margin-bottom: var(--sp-3);
   line-height: 1.3;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.cs-section-bar-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  animation: underlineExpand 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+
+@keyframes underlineExpand {
+  from { width: 0; }
+  to { width: 20px; }
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -554,11 +589,17 @@
   margin-top: var(--sp-4);
   margin-bottom: var(--sp-5);
   max-width: 750px;
-  padding: var(--sp-4);
-  background: #FFFFFF;
+  padding: var(--sp-5) var(--sp-4);
+  background: linear-gradient(135deg, #FDF8F6 0%, #FFFFFF 60%);
   border: 1px solid #CCCCCA;
   border-left: 4px solid var(--accent);
   border-radius: var(--radius);
+  box-shadow: 0 2px 16px rgba(212, 63, 26, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.cs-hmw-statement:hover {
+  box-shadow: 0 4px 24px rgba(212, 63, 26, 0.1);
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -658,12 +699,13 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: var(--sp-3) var(--sp-3);
-  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), border-color 0.25s var(--ease);
 }
 
 .cs-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 28px rgba(0,0,0,0.07);
+  border-color: #BBBBBB;
 }
 
 .cs-card-num {
@@ -697,12 +739,13 @@
   border: 1px solid #CCCCCA;
   border-radius: var(--radius);
   padding: 24px 20px;
-  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), border-color 0.25s var(--ease);
 }
 
 .cs-takeaway:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 28px rgba(0,0,0,0.07);
+  border-color: #BBBBBB;
 }
 
 .cs-takeaway-num {
@@ -928,6 +971,11 @@
   align-items: center;
   padding: var(--sp-7) 0;
   border-bottom: 1px solid var(--border);
+  transition: background 0.3s ease;
+}
+
+.cs-feature-row:hover {
+  background: #FAFAF9;
 }
 
 .cs-feature-row:last-child { border-bottom: none; }
@@ -983,6 +1031,7 @@
   padding: 24px;
   box-sizing: border-box;
   margin: 0;
+  overflow: hidden;
 }
 
 .cs-feature-image img {
@@ -990,6 +1039,12 @@
   max-height: 100%;
   width: auto;
   height: auto;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cs-feature-row:hover .cs-feature-image img {
+  transform: scale(1.03);
+}
   object-fit: contain;
   border: none;
   display: block;
@@ -1047,9 +1102,30 @@
   align-items: center;
   gap: 14px;
   transition: color 0.2s, gap 0.2s;
+  position: relative;
+  padding-bottom: 4px;
 }
 
-.cs-next-link:hover { color: var(--accent); gap: 22px; }
+.cs-next-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: left;
+}
+
+.cs-next-link:hover {
+  color: var(--accent);
+  gap: 22px;
+}
+
+.cs-next-link:hover::after {
+  width: 100%;
+}
 
 /* ══════════════════════════════════════════════════════════════
    PHONE MOCKUPS  (ecowise / exacqgo hero visuals)
