@@ -551,6 +551,8 @@ body {
   transform: perspective(700px) rotateY(-8deg) rotateX(4deg);
   filter: drop-shadow(0 16px 32px rgba(0,0,0,0.4));
   transition: transform 0.45s var(--ease);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 .project-card:hover .project-mockup { transform: perspective(700px) rotateY(0) rotateX(0); }
 

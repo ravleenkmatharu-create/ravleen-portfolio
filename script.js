@@ -116,10 +116,9 @@ function enableParallaxTilt(selector) {
   }
 }
 
-// Apply parallax to hero card, case study hero images, and project mockups
+// Apply parallax to hero card and case study hero images
 enableParallaxTilt('.hero-card');
 enableParallaxTilt('.cs-hero-image');
-enableParallaxTilt('.project-mockup');
 
 // ── Counter animation on stat numbers ────────────────────────
 function animateCounter(el, target, duration = 1200) {
