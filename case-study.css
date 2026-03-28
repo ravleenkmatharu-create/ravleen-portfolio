@@ -350,6 +350,8 @@
   max-width: 100%;
   margin: 0 auto;
   display: block;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 /* ── Legacy image blocks (used on old ecowise/exacqgo layout) ─ */
