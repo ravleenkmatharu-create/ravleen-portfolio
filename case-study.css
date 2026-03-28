@@ -888,11 +888,15 @@
 
 /* Feature section images — consistent size and aspect ratio */
 .cs-feature-image {
+  width: 100%;
   aspect-ratio: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--bg-subtle);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin: 0;
 }
 
 .cs-feature-image img {
@@ -900,7 +904,7 @@
   height: 100%;
   object-fit: contain;
   border-radius: var(--radius);
-  border: 1px solid var(--border);
+  border: none;
 }
 
 /* ══════════════════════════════════════════════════════════════
