@@ -104,7 +104,7 @@ function enableParallaxTilt(selector) {
       const rotX   = (-dy * 8).toFixed(2);
       const rotY   = ( dx * 8).toFixed(2);
       element.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
-      element.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.15)';
+      element.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.12)';
     });
 
     element.addEventListener('mouseleave', () => {
