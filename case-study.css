@@ -40,11 +40,7 @@
 
 /* ── Light hero variant (extinguish) ───────────────────────── */
 .cs-hero--light {
-  background: var(--bg);
-}
-
-.cs-hero--light::before {
-  background: #E8E8E6;
+  background: #D9D9D6;
 }
 
 .cs-hero--light .cs-back {
