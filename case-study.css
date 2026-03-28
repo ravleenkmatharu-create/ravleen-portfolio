@@ -428,7 +428,7 @@
   width: 100%;
   height: auto;
   display: block;
-  max-width: 480px;
+  max-width: 320px;
   margin: 0 auto;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
