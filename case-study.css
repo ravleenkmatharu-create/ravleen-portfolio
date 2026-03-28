@@ -886,11 +886,15 @@
   line-height: 1.8;
 }
 
-/* Feature section images — larger display */
+/* Feature section images — consistent size and aspect ratio */
+.cs-feature-image {
+  aspect-ratio: 1;
+}
+
 .cs-feature-image img {
   width: 100%;
-  height: auto;
-  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
