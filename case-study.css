@@ -434,16 +434,15 @@
    NUMBERED IMAGE COLUMNS  (Secondary Research 01 / 02)
    ══════════════════════════════════════════════════════════════ */
 
-.cs-labeled-img {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-2);
-}
-
 /* Numbered research images — same size, square proportions */
 .cs-grid-2--labeled {
   margin-top: var(--sp-5);
   margin-bottom: var(--sp-5);
+}
+
+.cs-labeled-img {
+  display: flex;
+  flex-direction: column;
 }
 
 .cs-img-num {
@@ -451,30 +450,34 @@
   font-size: 13px;
   font-weight: 700;
   color: var(--accent);
-  margin-bottom: 0;
+  margin-bottom: var(--sp-2);
 }
 
 .cs-grid-2--labeled .cs-figure {
-  aspect-ratio: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  margin: 0;
 }
 
 .cs-grid-2--labeled .cs-figure img {
   width: 100%;
-  height: 100%;
-  display: block;
   max-width: 340px;
   max-height: 340px;
+  display: block;
   margin: 0 auto;
   object-fit: cover;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
+  aspect-ratio: 1;
 }
 
 .cs-grid-2--labeled .cs-figure figcaption {
-  margin-top: 0;
+  margin-top: var(--sp-2);
+  font-size: 13px;
+  color: var(--text-light);
+  text-align: center;
+  line-height: 1.6;
+  font-style: italic;
 }
 
 /* ══════════════════════════════════════════════════════════════
