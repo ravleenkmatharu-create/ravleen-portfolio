@@ -672,7 +672,7 @@
   font-size: 2rem;
   font-weight: 700;
   color: var(--accent);
-  opacity: 0.22;
+  opacity: 0.8;
   line-height: 1;
   margin-bottom: var(--sp-2);
   letter-spacing: -0.02em;
@@ -710,7 +710,7 @@
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--accent);
-  opacity: 0.25;
+  opacity: 0.8;
   line-height: 1;
   margin-bottom: 12px;
   letter-spacing: -0.02em;
