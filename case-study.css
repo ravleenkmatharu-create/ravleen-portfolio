@@ -423,15 +423,21 @@
   flex-direction: column;
 }
 
-/* Numbered research images — compact sizing, natural proportions */
+/* Numbered research images — same size, square proportions */
 .cs-grid-2--labeled .cs-figure img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   max-width: 320px;
+  max-height: 320px;
   margin: 0 auto;
+  object-fit: cover;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
+}
+
+.cs-grid-2--labeled .cs-figure {
+  aspect-ratio: 1;
 }
 
 .cs-img-num {
