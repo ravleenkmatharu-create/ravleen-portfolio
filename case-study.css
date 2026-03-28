@@ -20,10 +20,22 @@
    ══════════════════════════════════════════════════════════════ */
 
 .cs-hero {
+  position: relative;
   padding-top: 96px;
   padding-bottom: 64px;
   background: #0F0F0E;
   color: #F8F6F1;
+}
+
+.cs-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #050504;
+  z-index: -1;
 }
 
 /* ── Light hero variant (extinguish) ───────────────────────── */
