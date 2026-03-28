@@ -566,7 +566,7 @@ body {
   display: block;
   border-radius: var(--radius);
   transition: transform 0.4s var(--ease);
-  border: 2px solid var(--accent);
+  border: 2px solid #E8956D;
   box-sizing: border-box;
 }
 
@@ -615,18 +615,7 @@ body {
   margin-bottom: var(--sp-2);
 }
 .project-num {
-  font-family: var(--font-display);
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--accent);
-  letter-spacing: 0.08em;
-  background: rgba(212, 63, 26, 0.1);
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
 }
 .project-date { font-size: 12px; color: var(--text-light); font-weight: 500; }
 
