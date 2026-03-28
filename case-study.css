@@ -15,11 +15,6 @@
   padding: 0 var(--gutter);
 }
 
-/* Page background — subtle off-white */
-body {
-  background: #FAFAF9;
-}
-
 /* ══════════════════════════════════════════════════════════════
    HERO — dark section at top of every case study
    ══════════════════════════════════════════════════════════════ */
@@ -215,11 +210,10 @@ body {
 
 .cs-section {
   padding: var(--sp-12) 0;
-  background: #FFFFFF;
 }
 
 .cs-section--alt {
-  background: #F5F5F4;
+  background: var(--bg-subtle);
 }
 
 /* Constrain content width for readability */
@@ -338,18 +332,15 @@ body {
 /* Figure base — full width within its parent */
 .cs-figure {
   margin: var(--sp-5) auto;
-  background: #FFFFFF;
-  border-radius: var(--radius);
-  overflow: hidden;
 }
 
 .cs-figure img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 0;
+  border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: #FFFFFF;
+  background: var(--bg-subtle);
 }
 
 .cs-figure figcaption {
@@ -366,11 +357,6 @@ body {
 .cs-figure--contained {
   max-width: 880px;
   margin: var(--sp-4) auto 0;
-  background: #FFFFFF;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  padding: 0;
 }
 
 /* Constrained image — used for tall wireframe grid (2085×2616) */
@@ -459,19 +445,6 @@ body {
   margin-bottom: var(--sp-5);
 }
 
-.cs-grid-2--labeled .cs-figure {
-  aspect-ratio: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #FFFFFF;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px;
-  box-sizing: border-box;
-  margin: 0;
-}
-
 .cs-grid-2--labeled .cs-figure img {
   width: 100%;
   height: 100%;
@@ -482,8 +455,13 @@ body {
   object-fit: cover;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
-  border: none;
-  background: transparent;
+}
+
+.cs-grid-2--labeled .cs-figure {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cs-img-num {
@@ -655,7 +633,7 @@ body {
    ══════════════════════════════════════════════════════════════ */
 
 .cs-card {
-  background: #FFFFFF;
+  background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: var(--sp-3) var(--sp-3);
@@ -744,7 +722,7 @@ body {
 }
 
 .cs-step {
-  background: #FFFFFF;
+  background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: var(--sp-4) var(--sp-3);
@@ -795,7 +773,7 @@ body {
 }
 
 .cs-insight-card {
-  background: #FFFFFF;
+  background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: var(--sp-5) var(--sp-4);
@@ -839,7 +817,7 @@ body {
 }
 
 .cs-feature {
-  background: #FFFFFF;
+  background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: var(--sp-5);
@@ -971,20 +949,20 @@ body {
   max-width: 380px;
 }
 
-/* Feature section images — consistent size, proportional, full image visible */
+/* Feature section images — all same size, proportional, full image visible */
 .cs-feature-image {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  max-width: 100%;
+  height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFFFFF;
+  background: var(--bg-subtle);
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  padding: 24px;
+  padding: 16px;
   box-sizing: border-box;
   margin: 0;
-  overflow: hidden;
 }
 
 .cs-feature-image img {

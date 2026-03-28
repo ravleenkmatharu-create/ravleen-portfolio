@@ -17,11 +17,11 @@ ul { list-style: none; }
 
 /* ── Design tokens ──────────────────────────────────────────── */
 :root {
-  /* Colors — refined for visual consistency */
-  --bg:           #FAFAF9;
+  /* Colors — unchanged */
+  --bg:           #FFFFFF;
   --bg-dark:      #111110;
   --bg-card:      #FFFFFF;
-  --bg-subtle:    #F5F5F4;
+  --bg-subtle:    #F7F7F6;
   --accent:       #E8522A;
   --accent-soft:  #FDF0EB;
   --text:         #111110;
