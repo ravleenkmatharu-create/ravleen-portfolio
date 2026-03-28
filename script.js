@@ -104,11 +104,13 @@ function enableParallaxTilt(selector) {
       const rotX   = (-dy * 8).toFixed(2);
       const rotY   = ( dx * 8).toFixed(2);
       element.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
+      element.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.15)';
     });
 
     element.addEventListener('mouseleave', () => {
-      element.style.transition = 'transform 0.5s cubic-bezier(0.4,0,0.2,1)';
+      element.style.transition = 'transform 0.5s cubic-bezier(0.4,0,0.2,1), box-shadow 0.5s cubic-bezier(0.4,0,0.2,1)';
       element.style.transform  = '';
+      element.style.boxShadow = '';
       setTimeout(() => { element.style.transition = ''; }, 500);
     });
   }
