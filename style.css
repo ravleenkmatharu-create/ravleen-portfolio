@@ -565,6 +565,8 @@ body {
   display: block;
   border-radius: var(--radius);
   transition: transform 0.4s var(--ease);
+  border: 2px solid var(--accent);
+  box-sizing: border-box;
 }
 
 .project-card:hover .project-image {
