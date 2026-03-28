@@ -133,7 +133,7 @@
 /* ── Hero 2-col grid (text left / image right) ──────────────── */
 .cs-hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.25fr;
   gap: var(--sp-8);
   align-items: center;
   padding-top: var(--sp-4);
@@ -157,7 +157,7 @@
   height: auto;
   display: block;
   border-radius: var(--radius);
-  border: 1px solid rgba(248,246,241,0.1);
+  border: 2px solid #E8956D;
   box-shadow: 0 24px 64px rgba(0,0,0,0.4);
 }
 
