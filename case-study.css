@@ -423,12 +423,11 @@
   flex-direction: column;
 }
 
-/* Constrain numbered research images so they don't get too tall */
+/* Numbered research images — natural proportions */
 .cs-grid-2--labeled .cs-figure img {
-  max-height: 340px;
   width: 100%;
-  object-fit: cover;
-  object-position: center top;
+  height: auto;
+  display: block;
 }
 
 .cs-img-num {
