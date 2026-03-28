@@ -213,7 +213,7 @@
 }
 
 .cs-section--alt {
-  background: var(--bg-subtle);
+  background: #FFFFFF;
 }
 
 /* Constrain content width for readability */
@@ -543,8 +543,9 @@
   margin-bottom: var(--sp-5);
   max-width: 750px;
   padding: var(--sp-4);
-  background: var(--bg-subtle);
-  border-left: 3px solid var(--accent);
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
   border-radius: var(--radius);
 }
 

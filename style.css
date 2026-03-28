@@ -62,7 +62,7 @@ ul { list-style: none; }
 /* ── Base ───────────────────────────────────────────────────── */
 body {
   font-family: var(--font-body);
-  background: var(--bg);
+  background: #FFFFFF;
   color: var(--text);
   font-size: 16px;
   line-height: 1.6;
