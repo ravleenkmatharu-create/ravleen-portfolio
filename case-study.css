@@ -44,21 +44,21 @@
 }
 
 .cs-hero--light .cs-back {
-  color: var(--text-light);
+  color: var(--text-muted);
 }
 .cs-hero--light .cs-back:hover { color: var(--text); }
 
 .cs-hero--light .cs-tag {
-  color: var(--text-muted);
-  background: var(--bg-subtle);
-  border-color: var(--border);
+  color: var(--text);
+  background: #ECECEB;
+  border-color: #D9D9D6;
 }
 
 .cs-hero--light .cs-title   { color: var(--text); }
 .cs-hero--light .cs-subtitle { color: var(--text-muted); }
 
-.cs-hero--light .cs-meta-grid { border-top-color: var(--border); }
-.cs-hero--light .cs-meta-label { color: var(--text-light); }
+.cs-hero--light .cs-meta-grid { border-top-color: #D9D9D6; }
+.cs-hero--light .cs-meta-label { color: var(--text-muted); }
 .cs-hero--light .cs-meta-value { color: var(--text); }
 
 .cs-hero--light .cs-hero-image img {
