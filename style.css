@@ -514,6 +514,7 @@ body {
   display: flex;
   flex-direction: column;
   transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+  cursor: pointer;
 }
 .project-card:hover {
   transform: translateY(-6px);

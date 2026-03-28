@@ -162,3 +162,30 @@ const statsObserver = new IntersectionObserver((entries) => {
 
 const heroStats = document.querySelector('.hero-stats');
 if (heroStats) statsObserver.observe(heroStats);
+
+// ── Clickable Project Cards ────────────────────────────────────
+const projectCards = document.querySelectorAll('.project-card');
+
+projectCards.forEach(card => {
+  const link = card.querySelector('.project-link');
+  if (!link) return;
+
+  card.style.cursor = 'pointer';
+
+  card.addEventListener('click', (e) => {
+    // Don't double-navigate if clicking the link itself
+    if (e.target.closest('.project-link')) return;
+
+    const href = link.getAttribute('href');
+    if (href) window.location.href = href;
+  });
+
+  // Add hover effect
+  card.addEventListener('mouseenter', () => {
+    card.style.opacity = '0.85';
+  });
+
+  card.addEventListener('mouseleave', () => {
+    card.style.opacity = '1';
+  });
+});
