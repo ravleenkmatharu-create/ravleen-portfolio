@@ -556,7 +556,7 @@
   max-width: 750px;
   padding: var(--sp-4);
   background: #FFFFFF;
-  border: 1px solid var(--border);
+  border: 1px solid #CCCCCA;
   border-left: 4px solid var(--accent);
   border-radius: var(--radius);
 }
@@ -694,7 +694,7 @@
 
 .cs-takeaway {
   background: var(--bg-card);
-  border: 1px solid var(--border);
+  border: 1px solid #CCCCCA;
   border-radius: var(--radius);
   padding: 24px 20px;
   transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
