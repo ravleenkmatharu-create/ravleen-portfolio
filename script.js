@@ -120,14 +120,20 @@ function enableParallaxTilt(selector, shadowColor = 'rgba(0, 0, 0, 0.09)', maxTi
 // Apply parallax to hero card and case study hero images
 enableParallaxTilt('.hero-card');
 
-// Dark hero images (ecowise, exacqgo) - dark shadow
-const darkHero = document.querySelector('.cs-hero:not(.cs-hero--light) .cs-hero-image');
-if (darkHero) {
-  enableParallaxTilt('.cs-hero:not(.cs-hero--light) .cs-hero-image', 'rgba(0, 0, 0, 0.09)', 5);
+// Theme-based parallax for case study hero images
+if (document.body.classList.contains('theme-eco')) {
+  // EcoWise — green shadow
+  enableParallaxTilt('.cs-hero-image', 'rgba(10, 107, 53, 0.55)', 4);
+} else if (document.querySelector('.cs-hero--light')) {
+  // Extinguish — orange shadow (only page using --light modifier)
+  enableParallaxTilt('.cs-hero--light .cs-hero-image', 'rgba(232, 149, 109, 0.55)', 4);
+} else {
+  // ExacqGo or other dark pages
+  const darkHeroImg = document.querySelector('.cs-hero:not(.cs-hero--light) .cs-hero-image');
+  if (darkHeroImg) {
+    enableParallaxTilt('.cs-hero:not(.cs-hero--light) .cs-hero-image', 'rgba(0, 0, 0, 0.09)', 5);
+  }
 }
-
-// Light hero image (Extinguish) - orange shadow
-enableParallaxTilt('.cs-hero--light .cs-hero-image', 'rgba(232, 149, 109, 0.55)', 4);
 
 // ── Counter animation on stat numbers ────────────────────────
 function animateCounter(el, target, duration = 1200) {
