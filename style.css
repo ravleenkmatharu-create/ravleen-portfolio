@@ -574,6 +574,16 @@ body {
   transform: scale(1.02);
 }
 
+/* EcoWise project card — green border to match theme */
+.project-visual--eco .project-image {
+  border-color: #0A7A3C;
+}
+
+/* ExacqGo project card — blue border to match theme */
+.project-visual--security .project-image {
+  border-color: #001E70;
+}
+
 .mockup-screen {
   background: rgba(255,255,255,0.96);
   border-radius: 12px;
