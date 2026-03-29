@@ -63,7 +63,7 @@
 
 .cs-hero--light .cs-hero-image img {
   border-color: #CCCCCA;
-  box-shadow: 0 0 80px 16px rgba(212, 90, 40, 0.14), 0 16px 48px 0 rgba(232, 149, 109, 0.30), 0 4px 16px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 80px 16px rgba(212, 90, 40, 0.10), 0 16px 48px 0 rgba(232, 149, 109, 0.22), 0 4px 16px 0 rgba(0, 0, 0, 0.05);
 }
 
 /* Back link */
