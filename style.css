@@ -544,9 +544,18 @@ body {
   box-sizing: border-box;
 }
 
-.project-visual--fire     { background: linear-gradient(140deg, #1A0800 0%, #8B2500 55%, #C64A1A 100%); }
-.project-visual--eco      { background: linear-gradient(140deg, #001208 0%, #0A6B35 55%, #1A9B55 100%); }
-.project-visual--security { background: linear-gradient(140deg, #000514 0%, #001E70 55%, #0033B5 100%); }
+.project-visual--fire {
+  background: linear-gradient(140deg, #1A0800 0%, #8B2500 55%, #C64A1A 100%);
+  border-color: #E8956D;
+}
+.project-visual--eco {
+  background: linear-gradient(140deg, #001208 0%, #0A6B35 55%, #1A9B55 100%);
+  border-color: #3DAD75;
+}
+.project-visual--security {
+  background: linear-gradient(140deg, #000514 0%, #001E70 55%, #0033B5 100%);
+  border-color: #3355B5;
+}
 
 /* Mockup inside visual */
 .project-mockup {
@@ -573,15 +582,6 @@ body {
   transform: scale(1.02);
 }
 
-/* EcoWise project card — green border to match theme */
-.project-visual--eco {
-  border-color: #3DAD75;
-}
-
-/* ExacqGo project card — blue border to match theme */
-.project-visual--security {
-  border-color: #3355B5;
-}
 
 .mockup-screen {
   background: rgba(255,255,255,0.96);
