@@ -540,6 +540,8 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: var(--radius);
+  border: 2px solid #E8956D;
+  box-sizing: border-box;
 }
 
 .project-visual--fire     { background: linear-gradient(140deg, #1A0800 0%, #8B2500 55%, #C64A1A 100%); }
@@ -564,10 +566,7 @@ body {
   object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: var(--radius);
   transition: transform 0.4s var(--ease);
-  border: 2px solid #E8956D;
-  box-sizing: border-box;
 }
 
 .project-card:hover .project-image {
@@ -575,12 +574,12 @@ body {
 }
 
 /* EcoWise project card — green border to match theme */
-.project-visual--eco .project-image {
+.project-visual--eco {
   border-color: #3DAD75;
 }
 
 /* ExacqGo project card — blue border to match theme */
-.project-visual--security .project-image {
+.project-visual--security {
   border-color: #3355B5;
 }
 
