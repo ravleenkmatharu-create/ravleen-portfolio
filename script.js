@@ -103,7 +103,7 @@ function enableParallaxTilt(selector, shadowColor = 'rgba(0, 0, 0, 0.09)', maxTi
       const dy     = (e.clientY - cy) / (rect.height / 2);
       const rotX   = (-dy * maxTilt).toFixed(2);
       const rotY   = ( dx * maxTilt).toFixed(2);
-      element.style.transition = 'transform 0.1s ease-out, box-shadow 0.1s ease-out';
+      element.style.transition = 'transform 0.4s ease-out, box-shadow 0.4s ease-out';
       element.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
       element.style.boxShadow = `0 20px 40px ${shadowColor}`;
     });
@@ -122,8 +122,8 @@ enableParallaxTilt('.hero-card');
 
 // Theme-based parallax for case study hero images
 if (document.body.classList.contains('theme-eco')) {
-  // EcoWise — green shadow
-  enableParallaxTilt('.cs-hero-image', 'rgba(10, 107, 53, 0.55)', 4);
+  // EcoWise — green shadow (subtle, slow parallax)
+  enableParallaxTilt('.cs-hero-image', 'rgba(10, 107, 53, 0.25)', 2);
 } else if (document.querySelector('.cs-hero--light')) {
   // Extinguish — orange shadow (only page using --light modifier)
   enableParallaxTilt('.cs-hero--light .cs-hero-image', 'rgba(232, 149, 109, 0.55)', 4);
