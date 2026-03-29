@@ -595,7 +595,7 @@
   margin-bottom: var(--sp-5);
   max-width: 750px;
   padding: var(--sp-5) var(--sp-4);
-  background: linear-gradient(135deg, #FDF8F6 0%, #FFFFFF 60%);
+  background: #FFFFFF;
   border: 1px solid #CCCCCA;
   border-left: 4px solid var(--accent);
   border-radius: var(--radius);
@@ -1396,7 +1396,7 @@ body.theme-eco .cs-hero-image img {
 }
 
 body.theme-eco .cs-hmw-statement {
-  background: linear-gradient(135deg, #F0FBF5 0%, #FFFFFF 60%);
+  background: #FFFFFF;
   box-shadow: 0 2px 16px rgba(10, 107, 53, 0.06);
 }
 
@@ -1419,7 +1419,7 @@ body.theme-security .cs-hero-image img {
 }
 
 body.theme-security .cs-hmw-statement {
-  background: linear-gradient(135deg, #F0F2FB 0%, #FFFFFF 60%);
+  background: #FFFFFF;
   box-shadow: 0 2px 16px rgba(0, 30, 112, 0.06);
 }
 
