@@ -121,20 +121,21 @@ function enableParallaxTilt(selector, shadowColor = 'rgba(0, 0, 0, 0.09)', maxTi
 enableParallaxTilt('.hero-card');
 
 // Theme-based parallax for case study hero images
+// Consistent parallax: maxTilt=2 (smooth), theme-specific shadows
 if (document.body.classList.contains('theme-security')) {
-  // ExacqGo — blue shadow (smooth, slow parallax)
+  // ExacqGo — blue shadow
   enableParallaxTilt('.cs-hero-image', 'rgba(51, 85, 181, 0.40)', 2);
 } else if (document.body.classList.contains('theme-eco')) {
-  // EcoWise — green shadow (subtle, slow parallax)
-  enableParallaxTilt('.cs-hero-image', 'rgba(10, 107, 53, 0.25)', 2);
+  // EcoWise — green shadow
+  enableParallaxTilt('.cs-hero-image', 'rgba(10, 107, 53, 0.35)', 2);
 } else if (document.querySelector('.cs-hero--light')) {
-  // Extinguish — orange shadow (only page using --light modifier)
-  enableParallaxTilt('.cs-hero--light .cs-hero-image', 'rgba(232, 149, 109, 0.55)', 4);
+  // Extinguish — orange shadow
+  enableParallaxTilt('.cs-hero--light .cs-hero-image', 'rgba(232, 149, 109, 0.40)', 2);
 } else {
   // Other dark pages
   const darkHeroImg = document.querySelector('.cs-hero:not(.cs-hero--light) .cs-hero-image');
   if (darkHeroImg) {
-    enableParallaxTilt('.cs-hero:not(.cs-hero--light) .cs-hero-image', 'rgba(0, 0, 0, 0.09)', 5);
+    enableParallaxTilt('.cs-hero:not(.cs-hero--light) .cs-hero-image', 'rgba(0, 0, 0, 0.09)', 2);
   }
 }
 
