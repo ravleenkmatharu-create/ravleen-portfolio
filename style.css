@@ -576,12 +576,12 @@ body {
 
 /* EcoWise project card — green border to match theme */
 .project-visual--eco .project-image {
-  border-color: #0A7A3C;
+  border-color: #3DAD75;
 }
 
 /* ExacqGo project card — blue border to match theme */
 .project-visual--security .project-image {
-  border-color: #001E70;
+  border-color: #3355B5;
 }
 
 .mockup-screen {
