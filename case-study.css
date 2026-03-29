@@ -62,7 +62,6 @@
 .cs-hero--light .cs-meta-value { color: var(--text); }
 
 .cs-hero--light .cs-hero-image img {
-  border-color: #CCCCCA;
   box-shadow: 0 0 80px 16px rgba(212, 90, 40, 0.10), 0 16px 48px 0 rgba(232, 149, 109, 0.22), 0 4px 16px 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -134,7 +133,7 @@
 /* ── Hero 2-col grid (text left / image right) ──────────────── */
 .cs-hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
+  grid-template-columns: 0.85fr 1.4fr;
   gap: var(--sp-10);
   align-items: center;
   padding-top: var(--sp-6);
@@ -159,7 +158,7 @@
   height: auto;
   display: block;
   border-radius: var(--radius);
-  border: 2px solid #E8956D;
+  border: none;
   box-shadow: 0 24px 64px rgba(0,0,0,0.4);
 }
 
@@ -1386,9 +1385,6 @@ body.theme-eco {
   --accent-soft: #EDFAF4;
 }
 
-body.theme-eco .cs-hero-image img {
-  border-color: #3DAD75;
-}
 
 body.theme-eco .cs-hero--light .cs-hero-image img,
 body.theme-eco .cs-hero-image img {
@@ -1410,9 +1406,6 @@ body.theme-security {
   --accent-soft: #EEF2FF;
 }
 
-body.theme-security .cs-hero-image img {
-  border-color: #3355B5;
-}
 
 body.theme-security .cs-hero-image img {
   box-shadow: 0 0 80px 16px rgba(0, 30, 112, 0.18), 0 16px 48px 0 rgba(51, 85, 181, 0.30), 0 4px 16px 0 rgba(0, 0, 0, 0.08);
