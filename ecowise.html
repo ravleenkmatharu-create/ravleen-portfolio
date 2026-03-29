@@ -32,37 +32,44 @@
   <!-- HERO -->
   <section class="cs-hero">
     <div class="container">
-      <a href="index.html#work" class="cs-back">← Back to Work</a>
+      <a href="index.html#work" class="cs-back reveal">← Back to Work</a>
+
       <div class="cs-hero-grid">
         <div class="cs-hero-text reveal">
-          <div class="cs-hero-meta">
+          <div class="cs-tags">
             <span class="cs-tag">AI/UX</span>
             <span class="cs-tag">Dashboard</span>
             <span class="cs-tag">Data Viz</span>
+            <span class="cs-tag">IoT</span>
           </div>
           <h1 class="cs-title">Energy Insight — EcoWise</h1>
           <p class="cs-subtitle">
-            An intelligent, AI-enhanced platform for manufacturers — real-time monitoring, actionable insights, and a built-in generative AI assistant that makes energy optimization accessible to everyone.
+            An intelligent, AI-enhanced platform that helps manufacturers monitor energy usage, troubleshoot issues, and optimize efficiency with minimal external support—powered by real-time insights and a built-in generative AI assistant.
           </p>
-          <div class="cs-info-row">
-            <div class="cs-info-item">
-              <span class="cs-info-label">Timeline</span>
-              <span class="cs-info-value">Spring 2024 · 3 Months</span>
+          <div class="cs-meta-grid">
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Role</span>
+              <span class="cs-meta-value">UX Researcher & Designer</span>
             </div>
-            <div class="cs-info-item">
-              <span class="cs-info-label">Role</span>
-              <span class="cs-info-value">UX Researcher & Designer</span>
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Timeline</span>
+              <span class="cs-meta-value">3 Months — Spring 2024</span>
             </div>
-            <div class="cs-info-item">
-              <span class="cs-info-label">Team</span>
-              <span class="cs-info-value">3 design students + Energy Insight team</span>
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Team</span>
+              <span class="cs-meta-value">3 design students + Energy Insight</span>
             </div>
-            <div class="cs-info-item">
-              <span class="cs-info-label">Platform</span>
-              <span class="cs-info-value">Web Dashboard</span>
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Platform</span>
+              <span class="cs-meta-value">Web Dashboard</span>
+            </div>
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Tools</span>
+              <span class="cs-meta-value">Figma · Miro · Notion</span>
             </div>
           </div>
         </div>
+
         <div class="cs-hero-image reveal reveal-delay-1">
           <img src="https://framerusercontent.com/images/vROiu8nFhYz778z2dGJbdvxXWYg.png"
                alt="EcoWise energy monitoring dashboard overview" />
@@ -71,227 +78,190 @@
     </div>
   </section>
 
-  <!-- MAIN CONTENT -->
-  <main class="cs-main container">
+  <!-- CONTEXT -->
+  <section class="cs-section cs-section--alt">
+    <div class="container">
 
-    <!-- Overview -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Overview</div>
-      <div class="cs-two-col">
-        <div>
-          <h2 class="cs-heading">The Challenge</h2>
-          <p>Energy Insights' original solution helped manufacturers reduce energy costs, but faced critical barriers: steep learning curves, lack of ongoing support after grant funding ended, and information overload in dashboards. Users needed intuitive, self-service tools that didn't require external consultants.</p>
+      <h2 class="cs-section-bar-title reveal">Context</h2>
+
+      <p class="cs-text reveal">
+        Energy Insights' original solution helped manufacturers reduce energy costs through IoT-powered monitoring. However, when grant funding ended, the business model broke down. Users faced unexpected ongoing costs, poor onboarding support, and dashboards that required technical expertise to interpret.
+      </p>
+
+      <p class="cs-text reveal">
+        The company needed to pivot from a hardware-first model to a sustainable SaaS platform—one that empowered users to achieve energy optimization independently, without relying on external consultants or extensive training.
+      </p>
+
+      <p class="cs-text reveal">
+        This required reimagining the entire user experience: from the information architecture to the role-specific interfaces, and the integration of AI as a contextual support system rather than a novelty feature.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- RESEARCH FINDINGS -->
+  <section class="cs-section">
+    <div class="container">
+
+      <h2 class="cs-section-bar-title reveal">Research Findings</h2>
+
+      <p class="cs-text reveal">
+        We conducted interviews with facility operators, plant engineers, and facility managers to understand energy management workflows, pain points, and mental models. Three core challenges emerged:
+      </p>
+
+      <div class="cs-grid-2x2 reveal">
+        <div class="cs-takeaway-item">
+          <span class="cs-takeaway-num">01</span>
+          <p><strong>Support Gaps.</strong> Users were surprised by ongoing costs after grants ended and lacked post-launch service support.</p>
         </div>
-        <div>
-          <h2 class="cs-heading">The Solution</h2>
-          <p>EcoWise reimagines energy monitoring as an AI-enhanced platform that combines real-time dashboards with an intelligent assistant. Manufacturers now get actionable insights, machine-level clarity, and contextual support—all without external dependencies.</p>
+        <div class="cs-takeaway-item">
+          <span class="cs-takeaway-num">02</span>
+          <p><strong>Complexity Barriers.</strong> Operators couldn't interpret dense dashboards without extensive training or external guidance.</p>
+        </div>
+        <div class="cs-takeaway-item">
+          <span class="cs-takeaway-num">03</span>
+          <p><strong>Divergent Needs.</strong> Operators, engineers, and managers had completely different mental models and required different interfaces.</p>
+        </div>
+        <div class="cs-takeaway-item">
+          <span class="cs-takeaway-num">04</span>
+          <p><strong>Reliance on Consultants.</strong> The system couldn't scale because every issue required external expert intervention.</p>
         </div>
       </div>
-    </section>
 
-    <div class="cs-divider reveal"></div>
+      <p class="cs-text reveal" style="margin-top: var(--sp-6);">
+        Through affinity mapping and synthesis, we formulated our problem statement:
+      </p>
 
-    <!-- Context -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Context</div>
-      <h2 class="cs-heading">Designing for Urgency & Clarity</h2>
-      <p class="cs-body">When grant funding ended, Energy Insights needed to transition from a hardware-first model to a sustainable SaaS platform. This meant reimagining the entire user experience — moving away from feature-dense dashboards toward role-specific interfaces powered by AI.</p>
+      <p class="cs-hmw-statement reveal">
+        "How might we support manufacturing teams in understanding energy usage and maintaining efficiency after grant funding, without relying on constant external support or complex dashboards?"
+      </p>
 
-      <div class="cs-insight-grid">
-        <div class="cs-insight-card">
-          <span class="cs-insight-num">3</span>
-          <p>design students collaborated with Energy Insights to reimagine the platform from ground up.</p>
-        </div>
-        <div class="cs-insight-card">
-          <span class="cs-insight-num">5+</span>
-          <p>research interviews with manufacturers, integrators, and energy specialists revealed core pain points.</p>
-        </div>
-        <div class="cs-insight-card">
-          <span class="cs-insight-num">1st</span>
-          <p>production-grade AI assistant (Nova) integrated into an energy monitoring platform.</p>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <div class="cs-divider reveal"></div>
+  <!-- SYNTHESIZING INSIGHTS -->
+  <section class="cs-section cs-section--alt">
+    <div class="container">
 
-    <!-- Research -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Research</div>
-      <h2 class="cs-heading">Understanding Real Manufacturers</h2>
-      <p class="cs-body">We conducted in-depth interviews with facility operators, plant engineers, and facility managers to understand their energy management workflows, pain points, and expectations.</p>
+      <h2 class="cs-section-bar-title reveal">Synthesizing Insights</h2>
+
+      <p class="cs-text reveal">
+        Our research revealed that one-size-fits-all design would fail. We mapped customer segments and their unique value propositions to understand how to serve three distinct user types within a unified platform.
+      </p>
 
       <figure class="cs-figure cs-figure--full reveal">
-        <img src="https://framerusercontent.com/images/k0jKvtkcjvgEp8UE35Ggh0Eso.jpeg"
-             alt="Primary research — stakeholder interviews and field study" />
-      </figure>
-
-      <div class="cs-callout cs-callout--neutral reveal">
-        <span class="cs-callout-icon">💰</span>
-        <div>
-          <h3 style="font-weight: 600; margin-bottom: var(--sp-2); color: var(--text);">Support Gaps & Business Friction</h3>
-          <p style="margin: 0;">Ongoing costs surprised users after grants ended. Poor installation support and costly maintenance without predictive tools created friction. Users needed transparent pricing and proactive guidance.</p>
-        </div>
-      </div>
-
-      <div class="cs-callout cs-callout--neutral reveal reveal-delay-1" style="margin-top: var(--sp-4);">
-        <span class="cs-callout-icon">📚</span>
-        <div>
-          <h3 style="font-weight: 600; margin-bottom: var(--sp-2); color: var(--text);">Complexity & Training Barriers</h3>
-          <p style="margin: 0;">Operators lacked technical skills to interpret dense dashboards. Information overload made decision-making difficult. The system needed built-in support, not external training.</p>
-        </div>
-      </div>
-
-      <div class="cs-callout cs-callout--neutral reveal reveal-delay-2" style="margin-top: var(--sp-4);">
-        <span class="cs-callout-icon">👥</span>
-        <div>
-          <h3 style="font-weight: 600; margin-bottom: var(--sp-2); color: var(--text);">Divergent User Mental Models</h3>
-          <p style="margin: 0;">Operators needed simple, role-specific dashboards. Engineers wanted customization and control. Management required ROI dashboards. One-size-fits-all design would fail.</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="cs-divider reveal"></div>
-
-    <!-- Stakeholder Insights & Value Proposition -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Stakeholder Analysis</div>
-      <h2 class="cs-heading">Customer Segments & Value Proposition</h2>
-      <p class="cs-body">Through interviews, we mapped three distinct customer segments and their unique needs. Understanding how different user roles interact with energy data became the foundation for designing role-adaptive interfaces.</p>
-
-      <figure class="cs-figure cs-figure--full reveal" style="margin-top: var(--sp-6); margin-bottom: var(--sp-6);">
         <img src="project-images/Interview Insights.png"
              alt="Value Proposition and Customer Segment Maps from stakeholder interviews" />
-        <figcaption style="margin-top: var(--sp-3); font-size: 14px; color: var(--text-muted); text-align: center;">
-          Value proposition canvas mapping customer segments (Operators, Engineers, Management) and their core needs, pain points, and desired outcomes.
-        </figcaption>
+        <figcaption style="margin-top: var(--sp-3); text-align: center;">Value Proposition Canvas — mapping operator, engineer, and management segments with distinct needs and pain points.</figcaption>
       </figure>
 
-      <p class="cs-body">This segmentation revealed a critical insight: one interface couldn't serve three completely different user mental models. Operators needed simplicity and clarity. Engineers needed depth and control. Management needed ROI and compliance data. EcoWise would need to adapt to each role while maintaining a unified intelligent core.</p>
-    </section>
+      <p class="cs-text reveal" style="margin-top: var(--sp-6);">
+        Equally important: understanding how EcoWise fits within the larger IoT ecosystem. Data flows bidirectionally between machines, dashboards, and AI—each role accessing filtered views of the same intelligent backend.
+      </p>
 
-    <div class="cs-divider reveal"></div>
-
-    <!-- IoT Ecosystem Architecture -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">System Architecture</div>
-      <h2 class="cs-heading">IoT Ecosystem & User Interactions</h2>
-      <p class="cs-body">EcoWise operates within a complex IoT ecosystem where multiple user types interact with manufacturing machines, real-time data streams, and AI-powered insights. This map visualizes how the dashboard, AI Nova, machines, and users form an interconnected system.</p>
-
-      <figure class="cs-figure cs-figure--full reveal" style="margin-top: var(--sp-6); margin-bottom: var(--sp-6);">
+      <figure class="cs-figure cs-figure--full reveal">
         <img src="project-images/Iot ecosystem.png"
              alt="IoT ecosystem map showing interactions between users, dashboards, machines, and AI features" />
-        <figcaption style="margin-top: var(--sp-3); font-size: 14px; color: var(--text-muted); text-align: center;">
-          System architecture showing bidirectional data flow: machines → dashboard → AI Nova → users. Each role accesses filtered views of the same underlying data.
-        </figcaption>
+        <figcaption style="margin-top: var(--sp-3); text-align: center;">System Architecture — machines → real-time dashboard → AI Nova → role-specific actions. Bidirectional data flow enables contextual intelligence.</figcaption>
       </figure>
 
-      <p class="cs-body">This ecosystem thinking informed every design decision. Data flows from machines → real-time monitoring → predictive alerts → AI-assisted troubleshooting. By visualizing the complete system, we ensured the dashboard and AI assistant weren't isolated features, but integrated components of a cohesive whole.</p>
-    </section>
+      <p class="cs-text reveal" style="margin-top: var(--sp-6);">
+        This ecosystem thinking became the north star for design. The dashboard wasn't just a visualization layer—it was the interface to an intelligent system where data, alerts, and AI guidance work together to reduce user burden and enable independent decision-making.
+      </p>
 
-    <div class="cs-divider reveal"></div>
+    </div>
+  </section>
 
-    <!-- Design Process -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Design Process</div>
-      <h2 class="cs-heading">From Insights to Solution</h2>
-      <p class="cs-body">We synthesized research into a core insight: the best energy tool isn't a dashboard—it's a partner. We built EcoWise around the belief that intelligent systems should reduce cognitive load, not increase it.</p>
+  <!-- DESIGN APPROACH -->
+  <section class="cs-section">
+    <div class="container">
 
-      <div class="cs-process-steps">
-        <div class="cs-step reveal">
-          <div class="cs-step-num">01</div>
-          <h3>Problem Framing</h3>
-          <p>Synthesized interview data into three core challenges: support gaps, training barriers, and divergent user needs. Identified AI as the key lever to provide contextual, role-aware assistance.</p>
-        </div>
-        <div class="cs-step reveal reveal-delay-1">
-          <div class="cs-step-num">02</div>
-          <h3>HMW Workshop</h3>
-          <p>"How might we support manufacturing teams in understanding energy usage and maintaining efficiency after grant funding without relying on constant external support?"</p>
-        </div>
-        <div class="cs-step reveal reveal-delay-2">
-          <div class="cs-step-num">03</div>
-          <h3>Role-Based Design</h3>
-          <p>Designed three distinct interfaces: Operator (simple, task-focused), Engineer (detailed metrics), Manager (ROI-focused). All powered by the same intelligent backend.</p>
-        </div>
-        <div class="cs-step reveal reveal-delay-3">
-          <div class="cs-step-num">04</div>
-          <h3>Iterative Validation</h3>
-          <p>Tested prototypes with real manufacturers. Iterated on AI Nova responses, alert thresholds, and dashboard layouts based on feedback.</p>
-        </div>
+      <h2 class="cs-section-bar-title reveal">Design Approach</h2>
+
+      <p class="cs-text reveal">
+        Our solution centered on three strategic pillars: role-adaptive interfaces, machine-level clarity, and AI as a trusted partner rather than a black box.
+      </p>
+
+      <div class="cs-grid-2 reveal">
+        <figure class="cs-figure">
+          <img src="https://framerusercontent.com/images/UoHBgP8D95jozHEjJUsb3Yys3lU.png"
+               alt="Onboarding flow with role selection and dashboard customization" />
+          <figcaption>Guided Onboarding — role selection and automatic dashboard configuration based on user priorities.</figcaption>
+        </figure>
+        <figure class="cs-figure">
+          <img src="https://framerusercontent.com/images/GZWCKr62v6fxpbCAAVfly15MC8c.png"
+               alt="Dashboard with machine-level monitoring and metrics" />
+          <figcaption>Machine-Centric Dashboard — live energy status for each machine with one-click drill-down into metrics and history.</figcaption>
+        </figure>
       </div>
-    </section>
 
-    <div class="cs-divider reveal"></div>
+      <p class="cs-text reveal" style="margin-top: var(--sp-4);">
+        After iterating on wireframes and testing with real manufacturers, we evolved the design to emphasize <strong>role-specific dashboards</strong>—where operators see simplified, task-focused views; engineers access detailed metrics and customization controls; and management views ROI dashboards. All powered by a unified intelligent backend.
+      </p>
 
-    <!-- Features -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Solution</div>
-      <h2 class="cs-heading">Key Features</h2>
+    </div>
+  </section>
 
+  <!-- FEATURES -->
+  <section class="cs-section cs-section--alt">
+    <div class="container">
+
+      <h2 class="cs-section-bar-title reveal">Solution</h2>
+
+      <p class="cs-text reveal">
+        EcoWise delivers intelligent energy management through four core features that work together to reduce manual burden and enable confident, independent decision-making.
+      </p>
+
+      <!-- Feature 01 -->
       <div class="cs-feature-row reveal">
         <div class="cs-feature-content">
           <span class="cs-feature-num">01</span>
-          <h3>Guided Onboarding Flow</h3>
-          <p>New users are welcomed with a step-by-step setup that walks them through role selection, energy priorities, and dashboard customization. No training required—the system configures itself based on user needs.</p>
-        </div>
-        <figure class="cs-figure cs-feature-image">
-          <img src="https://framerusercontent.com/images/UoHBgP8D95jozHEjJUsb3Yys3lU.png"
-               alt="Onboarding flow with role selection and setup" />
-        </figure>
-      </div>
-
-      <div class="cs-feature-row cs-feature-row--reverse reveal reveal-delay-1">
-        <div class="cs-feature-content">
-          <span class="cs-feature-num">02</span>
-          <h3>Machine-Centric Dashboard</h3>
-          <p>Live energy status across the manufacturing floor. Click into any machine for detailed metrics, historical trends, and anomalies. Visual layout makes it easy to spot what needs attention at a glance.</p>
-        </div>
-        <figure class="cs-figure cs-feature-image">
-          <img src="https://framerusercontent.com/images/GZWCKr62v6fxpbCAAVfly15MC8c.png"
-               alt="Dashboard with machine-level monitoring and metrics" />
-        </figure>
-      </div>
-
-      <div class="cs-feature-row reveal">
-        <div class="cs-feature-content">
-          <span class="cs-feature-num">03</span>
           <h3>AI Nova Assistant</h3>
-          <p>A conversational AI that provides real-time support without overwhelming users. Nova interprets energy data, guides troubleshooting, answers questions, and learns from plant-level behavior to deliver smarter guidance over time.</p>
+          <p>A conversational AI that provides real-time support without overwhelming users. Nova interprets energy data, guides troubleshooting, and learns from plant-level behavior to deliver smarter, personalized guidance over time.</p>
         </div>
         <figure class="cs-figure cs-feature-image">
           <img src="https://framerusercontent.com/images/uYpKUS5mpEEfvwaFQgfjTPbxPs.png"
-               alt="AI Nova assistant interface and interactions" />
+               alt="AI Nova assistant interface and conversational interactions" />
         </figure>
       </div>
 
-      <div class="cs-feature-row cs-feature-row--reverse reveal reveal-delay-1">
+      <!-- Feature 02 -->
+      <div class="cs-feature-row cs-feature-row--reverse reveal">
         <div class="cs-feature-content">
-          <span class="cs-feature-num">04</span>
+          <span class="cs-feature-num">02</span>
           <h3>Smart Alert System</h3>
-          <p>Real-time voltage warnings and anomaly detection. Critical alerts include context, severity, and next steps. Users know exactly what happened and what to do—no guessing required.</p>
+          <p>Real-time voltage warnings and anomaly detection. Critical alerts include context, severity, and next steps. Contextual push notifications inform without overwhelming—brief alerts for routine events, detailed drill-downs for incidents requiring action.</p>
         </div>
         <figure class="cs-figure cs-feature-image">
           <img src="https://framerusercontent.com/images/nPDOFcdS9UVglMYAKuDRnyCcpk.png"
-               alt="Smart alerts with contextual guidance" />
+               alt="Smart alerts with contextual guidance and issue resolution" />
         </figure>
       </div>
-    </section>
 
-    <div class="cs-divider reveal"></div>
+    </div>
+  </section>
 
-    <!-- Reflection -->
-    <section class="cs-section reveal">
-      <div class="cs-section-label">Reflection</div>
-      <h2 class="cs-heading">What I Learned</h2>
-      <p class="cs-body">Designing with AI fundamentally changed how I think about products. The hardest problem wasn't visual design—it was building user trust in an opaque system. Every design decision had to answer: "Does this make the AI feel trustworthy or suspicious?" That framing changed everything. I also learned that personalization isn't a nice-to-have when users have wildly different mental models—it's the only path to genuine usefulness.</p>
+  <!-- KEY TAKEAWAYS -->
+  <section class="cs-section">
+    <div class="container">
 
-      <div class="cs-callout cs-callout--neutral reveal">
+      <h2 class="cs-section-bar-title reveal">Reflection</h2>
+
+      <p class="cs-text reveal">
+        Designing with AI fundamentally changed how I approach product thinking. The hardest problem wasn't visual design—it was building user trust in an opaque system. Every design decision had to answer: <em>"Does this make the AI feel trustworthy or suspicious?"</em>
+      </p>
+
+      <p class="cs-text reveal">
+        I also learned that personalization isn't optional when users have divergent mental models. Operators, engineers, and management literally think differently about energy data. Rather than compromise with a "one-size-fits-some" approach, we embraced role adaptation as a core strategy. This required designing for three distinct user experiences while maintaining a unified intelligent core.
+      </p>
+
+      <div class="cs-callout cs-callout--neutral reveal" style="margin-top: var(--sp-6);">
         <span class="cs-callout-icon">💡</span>
-        <blockquote>"The best energy tool isn't a dashboard that shows more data—it's a partner that understands your role and shows you exactly what you need to know."</blockquote>
+        <blockquote style="margin: 0;">The best energy tool isn't a dashboard that shows more data—it's a partner that understands your role and shows you exactly what you need to know.</blockquote>
       </div>
-    </section>
 
-  </main>
+    </div>
+  </section>
 
   <!-- NEXT PROJECT -->
   <section class="cs-next">
