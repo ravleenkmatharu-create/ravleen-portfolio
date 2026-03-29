@@ -1407,8 +1407,9 @@ body.theme-security {
 }
 
 
+body.theme-security .cs-hero--light .cs-hero-image img,
 body.theme-security .cs-hero-image img {
-  box-shadow: 0 0 80px 16px rgba(0, 30, 112, 0.18), 0 16px 48px 0 rgba(51, 85, 181, 0.30), 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 80px 16px rgba(0, 30, 112, 0.18), 0 16px 48px 0 rgba(51, 85, 181, 0.35), 0 4px 16px 0 rgba(0, 0, 0, 0.08);
 }
 
 body.theme-security .cs-hmw-statement {
