@@ -91,7 +91,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ── Parallax tilt on interactive elements ─────────────────────
-function enableParallaxTilt(selector, shadowColor = 'rgba(0, 0, 0, 0.09)') {
+function enableParallaxTilt(selector, shadowColor = 'rgba(0, 0, 0, 0.09)', maxTilt = 8) {
   const element = document.querySelector(selector);
 
   if (element && window.matchMedia('(hover: hover)').matches) {
@@ -101,17 +101,18 @@ function enableParallaxTilt(selector, shadowColor = 'rgba(0, 0, 0, 0.09)') {
       const cy     = rect.top  + rect.height / 2;
       const dx     = (e.clientX - cx) / (rect.width  / 2);
       const dy     = (e.clientY - cy) / (rect.height / 2);
-      const rotX   = (-dy * 8).toFixed(2);
-      const rotY   = ( dx * 8).toFixed(2);
+      const rotX   = (-dy * maxTilt).toFixed(2);
+      const rotY   = ( dx * maxTilt).toFixed(2);
+      element.style.transition = 'transform 0.1s ease-out, box-shadow 0.1s ease-out';
       element.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
       element.style.boxShadow = `0 20px 40px ${shadowColor}`;
     });
 
     element.addEventListener('mouseleave', () => {
-      element.style.transition = 'transform 0.5s cubic-bezier(0.4,0,0.2,1), box-shadow 0.5s cubic-bezier(0.4,0,0.2,1)';
+      element.style.transition = 'transform 0.65s cubic-bezier(0.4,0,0.2,1), box-shadow 0.65s cubic-bezier(0.4,0,0.2,1)';
       element.style.transform  = '';
       element.style.boxShadow = '';
-      setTimeout(() => { element.style.transition = ''; }, 500);
+      setTimeout(() => { element.style.transition = ''; }, 650);
     });
   }
 }
@@ -122,11 +123,11 @@ enableParallaxTilt('.hero-card');
 // Dark hero images (ecowise, exacqgo) - dark shadow
 const darkHero = document.querySelector('.cs-hero:not(.cs-hero--light) .cs-hero-image');
 if (darkHero) {
-  enableParallaxTilt('.cs-hero:not(.cs-hero--light) .cs-hero-image');
+  enableParallaxTilt('.cs-hero:not(.cs-hero--light) .cs-hero-image', 'rgba(0, 0, 0, 0.09)', 5);
 }
 
 // Light hero image (Extinguish) - orange shadow
-enableParallaxTilt('.cs-hero--light .cs-hero-image', 'rgba(232, 149, 109, 0.55)');
+enableParallaxTilt('.cs-hero--light .cs-hero-image', 'rgba(232, 149, 109, 0.55)', 4);
 
 // ── Counter animation on stat numbers ────────────────────────
 function animateCounter(el, target, duration = 1200) {
