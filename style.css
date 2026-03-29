@@ -576,10 +576,11 @@ body {
   object-position: center;
   display: block;
   transition: transform 0.4s var(--ease);
+  transform: scale(1.05);
 }
 
 .project-card:hover .project-image {
-  transform: scale(1.02);
+  transform: scale(1.08);
 }
 
 
