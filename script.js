@@ -91,7 +91,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ── Parallax tilt on interactive elements ─────────────────────
-function enableParallaxTilt(selector) {
+function enableParallaxTilt(selector, shadowColor = 'rgba(0, 0, 0, 0.09)') {
   const element = document.querySelector(selector);
 
   if (element && window.matchMedia('(hover: hover)').matches) {
@@ -104,7 +104,7 @@ function enableParallaxTilt(selector) {
       const rotX   = (-dy * 8).toFixed(2);
       const rotY   = ( dx * 8).toFixed(2);
       element.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
-      element.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.09)';
+      element.style.boxShadow = `0 20px 40px ${shadowColor}`;
     });
 
     element.addEventListener('mouseleave', () => {
@@ -118,7 +118,15 @@ function enableParallaxTilt(selector) {
 
 // Apply parallax to hero card and case study hero images
 enableParallaxTilt('.hero-card');
-enableParallaxTilt('.cs-hero-image');
+
+// Dark hero images (ecowise, exacqgo) - dark shadow
+const darkHero = document.querySelector('.cs-hero:not(.cs-hero--light) .cs-hero-image');
+if (darkHero) {
+  enableParallaxTilt('.cs-hero:not(.cs-hero--light) .cs-hero-image');
+}
+
+// Light hero image (Extinguish) - orange shadow
+enableParallaxTilt('.cs-hero--light .cs-hero-image', 'rgba(232, 149, 109, 0.09)');
 
 // ── Counter animation on stat numbers ────────────────────────
 function animateCounter(el, target, duration = 1200) {
