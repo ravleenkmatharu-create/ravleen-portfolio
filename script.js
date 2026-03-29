@@ -126,7 +126,7 @@ if (darkHero) {
 }
 
 // Light hero image (Extinguish) - orange shadow
-enableParallaxTilt('.cs-hero--light .cs-hero-image', 'rgba(232, 149, 109, 0.11)');
+enableParallaxTilt('.cs-hero--light .cs-hero-image', 'rgba(232, 149, 109, 0.13)');
 
 // ── Counter animation on stat numbers ────────────────────────
 function animateCounter(el, target, duration = 1200) {
