@@ -213,20 +213,23 @@ body {
   font-weight: 500;
   color: var(--text-muted);
   position: relative;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: all var(--dur) var(--ease);
+  transition: color var(--dur);
 }
 .nav-link::after {
-  display: none;
+  content: '';
+  position: absolute;
+  inset-block-end: -4px;
+  inset-inline-start: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width var(--dur) var(--ease);
 }
 .nav-link:hover,
-.nav-link.active {
-  color: var(--text);
-  background: #F5F5F5;
-}
+.nav-link.active { color: var(--text); }
 .nav-link:hover::after,
-.nav-link.active::after { display: none; }
+.nav-link.active::after { width: 100%; }
 
 .nav-links .btn-sm {
   background: var(--text);
