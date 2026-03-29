@@ -1400,6 +1400,19 @@ body.theme-eco .cs-hmw-statement:hover {
   box-shadow: 0 4px 24px rgba(10, 107, 53, 0.10);
 }
 
+/* EcoWise content centre alignment */
+body.theme-eco .cs-text,
+body.theme-eco .cs-heading,
+body.theme-eco .cs-section-bar-title,
+body.theme-eco .cs-body {
+  text-align: center;
+}
+
+body.theme-eco .cs-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ExacqGo — Deep Navy Blue Theme */
 body.theme-security {
   --accent: #001E70;
