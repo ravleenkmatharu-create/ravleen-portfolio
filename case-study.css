@@ -40,7 +40,7 @@
 
 /* ── Light hero variant (extinguish) ───────────────────────── */
 .cs-hero--light {
-  background: radial-gradient(ellipse at 68% 45%, rgba(232, 149, 109, 0.07) 0%, transparent 60%), #F7F7F6;
+  background: #F8F6F4;
 }
 
 .cs-hero--light .cs-back {
