@@ -1418,82 +1418,92 @@ body.theme-security .cs-hmw-statement {
 }
 
 /* ══════════════════════════════════════════════════════════════
-   CAROUSEL COMPONENT
+   CAROUSEL COMPONENT — GRID SLIDER (3 IMAGES PER SLIDE)
    ══════════════════════════════════════════════════════════════ */
 
-.cs-carousel {
+.cs-carousel-grid {
   position: relative;
   width: 100%;
   margin: 0 auto;
 }
 
-.cs-carousel-container {
+.cs-carousel-container-grid {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
   background: #FFFFFF;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-  aspect-ratio: 16 / 10;
+  padding: 16px;
 }
 
-.cs-carousel-track {
+.cs-carousel-track-grid {
   display: flex;
   transition: transform 0.5s ease-out;
   width: 100%;
 }
 
-.cs-carousel-slide {
+.cs-carousel-slide-group {
   min-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
 }
 
-.cs-carousel-slide img {
+.cs-carousel-item {
+  overflow: hidden;
+  border-radius: 8px;
+  aspect-ratio: 4 / 3;
+}
+
+.cs-carousel-item img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
 }
 
-.cs-carousel-prev,
-.cs-carousel-next {
+.cs-carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+.cs-carousel-prev-grid,
+.cs-carousel-next-grid {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 8px 12px;
+  padding: 10px 14px;
   cursor: pointer;
-  border-radius: 4px;
-  font-size: 14px;
+  border-radius: 6px;
+  font-size: 16px;
   transition: background 0.3s ease;
   z-index: 10;
 }
 
-.cs-carousel-prev:hover,
-.cs-carousel-next:hover {
+.cs-carousel-prev-grid:hover,
+.cs-carousel-next-grid:hover {
   background: rgba(0, 0, 0, 0.7);
 }
 
-.cs-carousel-prev {
-  left: 16px;
+.cs-carousel-prev-grid {
+  left: 12px;
 }
 
-.cs-carousel-next {
-  right: 16px;
+.cs-carousel-next-grid {
+  right: 12px;
 }
 
-.cs-carousel-dots {
+.cs-carousel-dots-grid {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-top: 16px;
-  padding: 0 16px;
 }
 
-.cs-carousel-dot {
+.cs-carousel-dot-grid {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -1502,24 +1512,26 @@ body.theme-security .cs-hmw-statement {
   transition: background 0.3s ease;
 }
 
-.cs-carousel-dot.active {
+.cs-carousel-dot-grid.active {
   background: var(--accent, #001E70);
 }
 
-/* Responsive carousel layout */
+/* Responsive grid carousel */
+@media (max-width: 1024px) {
+  .cs-carousel-slide-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
-  .cs-carousel {
-    max-width: 100% !important;
+  .cs-carousel-slide-group {
+    grid-template-columns: 1fr;
   }
 
-  .cs-carousel-prev,
-  .cs-carousel-next {
-    padding: 6px 10px;
-    font-size: 12px;
-  }
-
-  [style*="grid-template-columns: 1fr 1fr"] {
-    grid-template-columns: 1fr !important;
+  .cs-carousel-prev-grid,
+  .cs-carousel-next-grid {
+    padding: 8px 12px;
+    font-size: 14px;
   }
 }
 

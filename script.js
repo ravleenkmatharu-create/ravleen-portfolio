@@ -217,17 +217,18 @@ projectCards.forEach(card => {
   });
 });
 
-// ── Carousel functionality ──────────────────────────────────────
-const carousels = document.querySelectorAll('.cs-carousel');
+// ── Grid Carousel functionality (3 images per slide) ──────────────
+const carouselGrids = document.querySelectorAll('.cs-carousel-grid');
 
-carousels.forEach(carousel => {
-  const track = carousel.querySelector('.cs-carousel-track');
-  const slides = carousel.querySelectorAll('.cs-carousel-slide');
-  const dots = carousel.querySelectorAll('.cs-carousel-dot');
-  const prevBtn = carousel.querySelector('.cs-carousel-prev');
-  const nextBtn = carousel.querySelector('.cs-carousel-next');
+carouselGrids.forEach(carousel => {
+  const track = carousel.querySelector('.cs-carousel-track-grid');
+  const slides = carousel.querySelectorAll('.cs-carousel-slide-group');
+  const dots = carousel.querySelectorAll('.cs-carousel-dot-grid');
+  const prevBtn = carousel.querySelector('.cs-carousel-prev-grid');
+  const nextBtn = carousel.querySelector('.cs-carousel-next-grid');
 
   let currentSlide = 0;
+  const totalSlides = slides.length;
 
   function updateCarousel() {
     track.style.transform = `translateX(-${currentSlide * 100}%)`;
@@ -237,12 +238,12 @@ carousels.forEach(carousel => {
   }
 
   function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
+    currentSlide = (currentSlide + 1) % totalSlides;
     updateCarousel();
   }
 
   function prevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
     updateCarousel();
   }
 
