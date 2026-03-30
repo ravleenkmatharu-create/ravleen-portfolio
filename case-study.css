@@ -557,6 +557,11 @@
   transform: scale(1.02);
 }
 
+/* Borderless figure variant */
+.cs-figure--borderless img {
+  border: none;
+}
+
 /* ══════════════════════════════════════════════════════════════
    COMPACT 2×2 TAKEAWAY GRID  (Primary Research)
    ══════════════════════════════════════════════════════════════ */
