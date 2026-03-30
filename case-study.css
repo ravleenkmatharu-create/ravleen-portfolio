@@ -371,13 +371,9 @@
   border-radius: var(--radius);
   border: 1px solid var(--border);
   background: var(--bg-subtle);
-  transition: transform 0.5s ease;
   box-sizing: border-box;
 }
 
-.cs-figure:hover img {
-  transform: scale(1.02);
-}
 
 .cs-figure figcaption {
   font-size: 13px;
@@ -550,12 +546,8 @@
   height: auto;
   display: block;
   background: var(--bg-subtle);
-  transition: transform 0.5s ease;
 }
 
-.cs-figure--full:hover img {
-  transform: scale(1.02);
-}
 
 /* Borderless figure variant */
 .cs-figure--borderless img {
@@ -1063,9 +1055,6 @@
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.cs-feature-row:hover .cs-feature-image img {
-  transform: scale(1.03);
-}
   object-fit: contain;
   border: none;
   display: block;
