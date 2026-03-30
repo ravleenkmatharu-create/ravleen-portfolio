@@ -372,6 +372,7 @@
   border: 1px solid var(--border);
   background: var(--bg-subtle);
   transition: transform 0.5s ease;
+  box-sizing: border-box;
 }
 
 .cs-figure:hover img {
@@ -538,11 +539,22 @@
 .cs-figure--full {
   max-width: 100%;
   margin: var(--sp-4) 0;
+  overflow: hidden;
 }
 
 .cs-figure--full img {
   border-radius: var(--radius);
-  border: 1px solid var(--border);
+  border: 1px solid #BFBFBD;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  display: block;
+  background: var(--bg-subtle);
+  transition: transform 0.5s ease;
+}
+
+.cs-figure--full:hover img {
+  transform: scale(1.02);
 }
 
 /* ══════════════════════════════════════════════════════════════
