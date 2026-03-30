@@ -598,7 +598,7 @@
 
 .cs-takeaway-num {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--text);
   flex-shrink: 0;
@@ -741,7 +741,7 @@
 .cs-card-num {
   display: block;
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: var(--accent);
   opacity: 0.8;
@@ -775,7 +775,7 @@
 
 .cs-takeaway-num {
   font-family: var(--font-display);
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: var(--accent);
   opacity: 0.8;
@@ -828,7 +828,7 @@
 .cs-step-num {
   display: block;
   font-family: var(--font-body);
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: var(--accent);
   line-height: 1;
@@ -875,7 +875,7 @@
 .cs-insight-num {
   display: block;
   font-family: var(--font-display);
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 700;
   color: var(--accent);
   letter-spacing: -0.02em;
@@ -1029,7 +1029,7 @@
 
 .cs-feature-num {
   display: block;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.12em;
   color: var(--accent);
