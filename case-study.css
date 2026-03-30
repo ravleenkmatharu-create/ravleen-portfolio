@@ -1057,6 +1057,125 @@
   max-width: 380px;
 }
 
+/* ══════════════════════════════════════════════════════════════
+   CALLOUT BLOCKS & EMPHASIS
+   ══════════════════════════════════════════════════════════════ */
+
+/* Key Insight callout */
+.cs-key-insight {
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 8px 8px 0;
+  padding: var(--sp-4) var(--sp-5);
+  margin: var(--sp-6) 0;
+}
+.cs-key-insight-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--sp-2);
+  display: block;
+}
+.cs-key-insight p {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Design Decision callout */
+.cs-design-decision {
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: 0 0 8px 8px;
+  background: #FFFFFF;
+  padding: var(--sp-4) var(--sp-5);
+  margin: var(--sp-6) 0;
+}
+.cs-design-decision-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--sp-2);
+  display: block;
+}
+.cs-design-decision p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Signature Feature badge */
+.cs-signature-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: var(--sp-2);
+}
+
+/* Featured outcome stat card */
+.cs-insight-card--featured {
+  border-color: var(--accent);
+  border-width: 2px;
+  background: var(--accent-soft);
+}
+.cs-insight-card--featured .cs-insight-num {
+  font-size: 4rem;
+}
+
+/* Pain point label on quote cards */
+.cs-pain-point-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.8;
+  margin-bottom: var(--sp-2);
+  display: block;
+}
+
+/* Design Themes scannable grid */
+.cs-theme-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-3);
+  margin: var(--sp-4) 0 var(--sp-6);
+}
+.cs-theme-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-3) var(--sp-4);
+}
+.cs-theme-item strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.cs-theme-item span {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .cs-theme-grid { grid-template-columns: 1fr; }
+}
+
 .cs-feature-content p {
   font-size: 15px;
   color: var(--text-muted);
