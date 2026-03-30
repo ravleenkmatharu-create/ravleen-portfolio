@@ -216,3 +216,43 @@ projectCards.forEach(card => {
     card.style.opacity = '1';
   });
 });
+
+// ── Carousel functionality ──────────────────────────────────────
+const carousels = document.querySelectorAll('.cs-carousel');
+
+carousels.forEach(carousel => {
+  const track = carousel.querySelector('.cs-carousel-track');
+  const slides = carousel.querySelectorAll('.cs-carousel-slide');
+  const dots = carousel.querySelectorAll('.cs-carousel-dot');
+  const prevBtn = carousel.querySelector('.cs-carousel-prev');
+  const nextBtn = carousel.querySelector('.cs-carousel-next');
+
+  let currentSlide = 0;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentSlide);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateCarousel();
+  }
+
+  prevBtn?.addEventListener('click', prevSlide);
+  nextBtn?.addEventListener('click', nextSlide);
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      currentSlide = index;
+      updateCarousel();
+    });
+  });
+});

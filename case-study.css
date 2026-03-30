@@ -1417,6 +1417,93 @@ body.theme-security .cs-hmw-statement {
   box-shadow: 0 2px 16px rgba(0, 30, 112, 0.06);
 }
 
+/* ══════════════════════════════════════════════════════════════
+   CAROUSEL COMPONENT
+   ══════════════════════════════════════════════════════════════ */
+
+.cs-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.cs-carousel-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.cs-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-out;
+  width: 100%;
+}
+
+.cs-carousel-slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+}
+
+.cs-carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cs-carousel-prev,
+.cs-carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.cs-carousel-prev:hover,
+.cs-carousel-next:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.cs-carousel-prev {
+  left: 16px;
+}
+
+.cs-carousel-next {
+  right: 16px;
+}
+
+.cs-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 0 16px;
+}
+
+.cs-carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #E0E0E0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cs-carousel-dot.active {
+  background: var(--accent, #001E70);
+}
+
 body.theme-security .cs-hmw-statement:hover {
   box-shadow: 0 4px 24px rgba(0, 30, 112, 0.10);
 }
