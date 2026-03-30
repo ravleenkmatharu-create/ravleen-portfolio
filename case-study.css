@@ -1589,6 +1589,26 @@ body.theme-security .cs-hmw-statement {
   box-shadow: 0 2px 16px rgba(0, 30, 112, 0.06);
 }
 
+/* Extinguish — Orange Fire Theme */
+body.theme-fire {
+  --accent: #E8956D;
+  --accent-soft: #FDF0EB;
+}
+
+body.theme-fire .cs-hero--light .cs-hero-image img,
+body.theme-fire .cs-hero-image img {
+  box-shadow: 0 0 80px 16px rgba(232, 149, 109, 0.15), 0 16px 48px 0 rgba(232, 149, 109, 0.25), 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+}
+
+body.theme-fire .cs-hmw-statement {
+  background: #FFFFFF;
+  box-shadow: 0 2px 16px rgba(232, 149, 109, 0.06);
+}
+
+body.theme-fire .cs-hmw-statement:hover {
+  box-shadow: 0 4px 24px rgba(232, 149, 109, 0.12);
+}
+
 /* ══════════════════════════════════════════════════════════════
    CAROUSEL COMPONENT
    ══════════════════════════════════════════════════════════════ */
