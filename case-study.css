@@ -1037,6 +1037,13 @@
   margin-bottom: var(--sp-2);
 }
 
+/* Larger numbers for feature rows in Solution sections */
+.cs-feature-row .cs-feature-num {
+  font-size: 2rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .cs-feature-content h3 {
   font-size: clamp(1.05rem, 1.6vw, 1.25rem);
   font-weight: 700;
