@@ -514,7 +514,7 @@ body {
 /* ── Project card ───────────────────────────────────────────── */
 .project-card {
   background: var(--bg-card);
-  border: none;
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
   display: flex;
