@@ -268,6 +268,28 @@
   to { opacity: 1; }
 }
 
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Section heading */
 .cs-heading {
   font-family: var(--font-display);
@@ -987,9 +1009,6 @@
   transition: background 0.3s ease;
 }
 
-.cs-feature-row:hover {
-  background: #FAFAF9;
-}
 
 .cs-feature-row:last-child { border-bottom: none; }
 
@@ -1004,6 +1023,27 @@
 
 .cs-feature-row--reverse .cs-feature-content { order: 2; }
 .cs-feature-row--reverse .cs-feature-image   { order: 1; }
+
+/* Alternating slide-in animations for feature rows */
+.cs-feature-row.reveal {
+  opacity: 0;
+  transform: none;
+  transition: none;
+}
+
+.cs-feature-row.reveal:nth-child(odd) {
+  animation: slideInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.cs-feature-row.reveal:nth-child(even) {
+  animation: slideInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.cs-feature-row.reveal.visible {
+  opacity: 1;
+  transform: none;
+  animation: none;
+}
 
 .cs-feature-num {
   display: block;
