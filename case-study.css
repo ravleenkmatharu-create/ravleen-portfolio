@@ -371,20 +371,21 @@
   margin-bottom: var(--sp-5);
 }
 
-.cs-grid-2 .cs-figure {
+/* Compact grid variant — for reduced image sizes */
+.cs-grid-2--compact .cs-figure {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.cs-grid-2 .cs-figure img {
+.cs-grid-2--compact .cs-figure img {
   max-width: 60%;
   height: auto;
   margin-bottom: var(--sp-2);
 }
 
-.cs-grid-2 .cs-figure figcaption {
+.cs-grid-2--compact .cs-figure figcaption {
   text-align: center;
 }
 
