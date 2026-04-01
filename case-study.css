@@ -383,6 +383,7 @@
   max-width: 60%;
   height: auto;
   margin-bottom: var(--sp-2);
+  max-height: 400px;
 }
 
 .cs-grid-2--compact .cs-figure figcaption {
