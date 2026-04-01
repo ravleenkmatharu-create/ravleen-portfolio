@@ -373,6 +373,7 @@
 
 .cs-grid-2 .cs-figure {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -380,6 +381,11 @@
 .cs-grid-2 .cs-figure img {
   max-width: 60%;
   height: auto;
+  margin-bottom: var(--sp-2);
+}
+
+.cs-grid-2 .cs-figure figcaption {
+  text-align: center;
 }
 
 /* 3-column card grid */
