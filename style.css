@@ -457,7 +457,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: var(--sp-12);
   align-items: start;
-  margin-top: var(--sp-2);
+  margin-top: var(--sp-4);
 }
 
 .about-left .section-heading {
@@ -493,7 +493,7 @@ body {
 }
 .skill-tag:hover {
   background: var(--accent-soft);
-  border-color: rgba(232,82,42,0.25);
+  border-color: rgba(124,58,237,0.25);
   color: var(--accent);
 }
 
@@ -838,19 +838,20 @@ body {
   font-family: var(--font-display);
   font-size: 20px;
   font-weight: 700;
-  color: #7C3AED;
+  color: var(--accent);
 }
 
 .footer-copy { font-size: 13px; color: rgba(248,246,241,0.3); }
 
 .footer-links { display: flex; gap: var(--sp-4); }
 .footer-links a {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
-  color: #7C3AED;
-  transition: color var(--dur);
+  color: var(--accent);
+  opacity: 0.7;
+  transition: color var(--dur), opacity var(--dur);
 }
-.footer-links a:hover { color: #A78BFA; }
+.footer-links a:hover { opacity: 1; }
 
 /* ─────────────────────────────────────────────────────────────
    RESPONSIVE

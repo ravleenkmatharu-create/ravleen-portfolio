@@ -1269,8 +1269,8 @@
 
 .cs-next {
   background: var(--bg-card);
-  border-top: 1px solid var(--border);
-  padding: 56px 0;
+  border-top: 1px solid #D4D0CA;
+  padding: 72px 0;
 }
 
 .cs-next-inner {
@@ -1281,11 +1281,10 @@
 }
 
 .cs-next-label {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
   color: var(--text-light);
+  opacity: 0.6;
 }
 
 .cs-next-link {
@@ -1296,7 +1295,8 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  transition: color 0.2s, gap 0.2s;
+  opacity: 0.8;
+  transition: color 0.2s, gap 0.2s, opacity 0.2s;
   position: relative;
   padding-bottom: 4px;
 }
@@ -1316,6 +1316,7 @@
 .cs-next-link:hover {
   color: var(--accent);
   gap: 22px;
+  opacity: 1;
 }
 
 .cs-next-link:hover::after {
