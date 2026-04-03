@@ -91,7 +91,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ── Parallax tilt on interactive elements ─────────────────────
-function enableParallaxTilt(selector, shadowColor = 'rgba(0, 0, 0, 0.09)', maxTilt = 8) {
+function enableParallaxTilt(selector, shadowColor = 'rgba(0, 0, 0, 0.09)', maxTilt = 4) {
   const element = document.querySelector(selector);
 
   if (element && window.matchMedia('(hover: hover)').matches) {
@@ -103,22 +103,22 @@ function enableParallaxTilt(selector, shadowColor = 'rgba(0, 0, 0, 0.09)', maxTi
       const dy     = (e.clientY - cy) / (rect.height / 2);
       const rotX   = (-dy * maxTilt).toFixed(2);
       const rotY   = ( dx * maxTilt).toFixed(2);
-      element.style.transition = 'transform 0.4s ease-out, box-shadow 0.4s ease-out';
+      element.style.transition = 'transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)';
       element.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
-      element.style.boxShadow = `0 20px 40px ${shadowColor}`;
+      element.style.boxShadow = `0 20px 60px ${shadowColor}, 0 0 40px ${shadowColor}`;
     });
 
     element.addEventListener('mouseleave', () => {
-      element.style.transition = 'transform 0.65s cubic-bezier(0.4,0,0.2,1), box-shadow 0.65s cubic-bezier(0.4,0,0.2,1)';
+      element.style.transition = 'transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)';
       element.style.transform  = '';
       element.style.boxShadow = '';
-      setTimeout(() => { element.style.transition = ''; }, 650);
+      setTimeout(() => { element.style.transition = ''; }, 800);
     });
   }
 }
 
-// Apply parallax to hero card and case study hero images
-enableParallaxTilt('.hero-card');
+// Apply parallax to hero card with purple glow
+enableParallaxTilt('.hero-card', 'rgba(124, 58, 237, 0.25)');
 
 // Theme-based parallax for case study hero images
 // Consistent parallax: maxTilt=2 (smooth), theme-specific shadows
