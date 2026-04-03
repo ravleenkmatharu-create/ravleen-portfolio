@@ -179,7 +179,7 @@ const statsObserver = new IntersectionObserver((entries) => {
       const suffix = raw.replace(/[0-9.]/g, '');
       if (num) {
         el.textContent = '0' + suffix;
-        animateCounter(el, num + suffix, 1000);
+        animateCounter(el, num, 1000);
       }
     });
 
