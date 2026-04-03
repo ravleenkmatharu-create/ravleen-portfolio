@@ -452,76 +452,60 @@ body {
   border-block: 1px solid var(--border);
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--sp-12);
-  align-items: start;
-  margin-top: var(--sp-4);
+.about-intro,
+.about-process,
+.about-personal {
+  max-width: 680px;
 }
 
-.about-left .section-heading {
-  position: sticky;
-  top: 88px;
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
-  line-height: 1.25;
+.about-heading {
+  font-family: var(--font-body);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.15;
+  margin-bottom: var(--sp-5);
 }
 
-.about-right p {
-  font-size: 15px;
+.about-bio {
+  font-size: 16px;
   color: var(--text-muted);
   line-height: 1.85;
   margin-bottom: var(--sp-3);
 }
 
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--sp-1);
+.about-skills {
+  font-size: 13px;
+  color: var(--text-light);
+  letter-spacing: 0.02em;
   margin-top: var(--sp-4);
 }
 
-.skill-tag {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-muted);
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 100px;
-  padding: 7px 16px;
-  transition: background var(--dur), border-color var(--dur), color var(--dur);
-}
-.skill-tag:hover {
-  background: var(--accent-soft);
-  border-color: rgba(124,58,237,0.25);
-  color: var(--accent);
-}
-
-/* ── How I Work — process visualization ─────────────────────── */
-.about-process {
-  margin-top: var(--sp-8);
-  padding-top: var(--sp-8);
-  border-top: 1px solid var(--border);
-}
-
-.about-process-label {
+.about-section-label {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: var(--sp-4);
+  margin-bottom: var(--sp-3);
   display: block;
 }
 
+.about-process {
+  margin-top: var(--sp-10);
+  padding-top: var(--sp-8);
+  border-top: 1px solid var(--border);
+}
+
 .about-process-steps {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: var(--sp-3);
+  display: flex;
+  gap: var(--sp-8);
 }
 
 .about-process-step {
-  /* Base styles for steps */
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .about-process-num {
@@ -529,56 +513,24 @@ body {
   font-weight: 700;
   color: var(--accent);
   letter-spacing: 0.1em;
-  display: block;
-  margin-bottom: 8px;
 }
 
 .about-process-name {
   font-size: 15px;
   font-weight: 600;
   color: var(--text);
-  margin-bottom: 8px;
-  line-height: 1.3;
 }
 
-.about-process-methods {
-  font-size: 13px;
-  color: var(--text-muted);
-  line-height: 1.65;
-}
-
-/* ── Beyond the Work — personality section ──────────────────── */
 .about-personal {
   margin-top: var(--sp-8);
   padding-top: var(--sp-8);
   border-top: 1px solid var(--border);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: var(--sp-8);
-  align-items: start;
 }
 
-.about-personal-right p {
-  font-size: 15px;
-  color: var(--text-muted);
-  line-height: 1.85;
-}
-
-/* ── Responsive: About sections ─────────────────────────────── */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .about-process-steps {
-    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
     gap: var(--sp-4);
-  }
-  .about-personal {
-    grid-template-columns: 1fr;
-    gap: var(--sp-3);
-  }
-}
-
-@media (max-width: 480px) {
-  .about-process-steps {
-    grid-template-columns: 1fr;
   }
 }
 
