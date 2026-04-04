@@ -99,7 +99,7 @@ body {
 
 .section-heading {
   font-family: var(--font-display);
-  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -151,7 +151,7 @@ body {
 .btn-primary:hover {
   background: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(232,82,42,0.28);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
 .btn-ghost {
@@ -165,6 +165,7 @@ body {
   background: var(--text);
   color: var(--bg);
   transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(17,17,16,0.18);
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -497,32 +498,66 @@ body {
   border-top: 1px solid var(--border);
 }
 
-.about-process-steps {
-  display: flex;
-  gap: var(--sp-8);
+/* ── About Process Cards ─────────────────────────────────── */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: var(--sp-5);
 }
 
-.about-process-step {
+.process-card {
+  background: var(--bg-subtle);
+  padding: var(--sp-5) var(--sp-4);
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: var(--sp-3);
 }
 
-.about-process-num {
+.process-num {
   font-size: 11px;
   font-weight: 700;
   color: var(--accent);
   letter-spacing: 0.1em;
 }
 
-.about-process-name {
+.process-title {
   font-size: 15px;
   font-weight: 600;
   color: var(--text);
+  margin: 0;
+}
+
+.process-methods {
+  list-style: none;
+  padding: 0;
+  margin: var(--sp-2) 0 0;
+  border-top: 1px solid var(--border);
+  padding-top: var(--sp-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.process-methods li {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
 }
 
 .about-personal {
   margin-top: var(--sp-8);
+  padding-top: var(--sp-8);
+  border-top: 1px solid var(--border);
+}
+
+.about-think {
+  max-width: 680px;
+  margin-top: var(--sp-10);
   padding-top: var(--sp-8);
   border-top: 1px solid var(--border);
 }
@@ -577,10 +612,22 @@ body {
   gap: 10px;
 }
 
+/* Responsive: 3 col → 2 col → 1 col */
+@media (max-width: 900px) {
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 600px) {
-  .about-process-steps {
-    flex-wrap: wrap;
-    gap: var(--sp-4);
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .process-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -630,7 +677,7 @@ body {
 
 /* Visual area */
 .project-visual {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -639,20 +686,21 @@ body {
   border-radius: var(--radius);
   border: 2px solid #E8956D;
   box-sizing: border-box;
-  flex: 1;
+  flex: 1.5;
   min-width: 0;
+  min-height: 400px;
 }
 
 .project-visual--fire {
-  background: linear-gradient(140deg, #1A0800 0%, #8B2500 55%, #C64A1A 100%);
+  background: transparent;
   border-color: #E8956D;
 }
 .project-visual--eco {
-  background: linear-gradient(140deg, #001208 0%, #0A6B35 55%, #1A9B55 100%);
+  background: transparent;
   border-color: #3DAD75;
 }
 .project-visual--security {
-  background: linear-gradient(140deg, #000514 0%, #001E70 55%, #0033B5 100%);
+  background: transparent;
   border-color: #3355B5;
 }
 
@@ -675,7 +723,9 @@ body {
   object-position: center;
   display: block;
   transition: transform 0.4s var(--ease);
-  transform: scale(1.05);
+  transform: scale(1);
+  position: relative;
+  z-index: 10;
 }
 
 .project-card:hover .project-image {
@@ -875,9 +925,9 @@ body {
    FOOTER
    ───────────────────────────────────────────────────────────── */
 .footer {
-  background: var(--bg-dark);
+  background: #F5F5F4;
   padding-block: var(--sp-5);
-  border-top: 1px solid var(--border-dark);
+  border-top: 1px solid var(--border);
 }
 
 .footer-inner {
@@ -895,14 +945,14 @@ body {
   color: var(--accent);
 }
 
-.footer-copy { font-size: 13px; color: rgba(248,246,241,0.3); }
+.footer-copy { font-size: 13px; color: #111110; }
 
 .footer-links { display: flex; gap: var(--sp-4); }
 .footer-links a {
   font-size: 14px;
   font-weight: 500;
-  color: var(--accent);
-  opacity: 0.7;
+  color: #7C3AED;
+  opacity: 1;
   transition: color var(--dur), opacity var(--dur);
 }
 .footer-links a:hover { opacity: 1; }
