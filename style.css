@@ -297,7 +297,7 @@ body {
   text-transform: uppercase;
   color: var(--accent);
   background: var(--accent-soft);
-  border: 1px solid rgba(232,82,42,0.15);
+  border: 1px solid rgba(124,58,237,0.15);
   border-radius: 100px;
   padding: 6px 14px;
   margin-bottom: var(--sp-3);
@@ -556,6 +556,25 @@ body {
   color: var(--text-muted);
   margin-top: var(--sp-2);
   letter-spacing: 0.04em;
+}
+
+.about-preview {
+  max-width: 680px;
+}
+
+.about-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: var(--sp-4);
+  transition: gap var(--dur) var(--ease);
+}
+
+.about-more:hover {
+  gap: 10px;
 }
 
 @media (max-width: 600px) {
