@@ -624,7 +624,13 @@ body {
   gap: 10px;
 }
 
-/* Responsive: 3 col → 2 col → 1 col */
+/* Responsive: 5 col → 4 col → 3 col → 2 col → 1 col */
+@media (max-width: 1100px) {
+  .process-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
   .process-grid {
     grid-template-columns: repeat(3, 1fr);
