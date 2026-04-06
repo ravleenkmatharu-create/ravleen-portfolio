@@ -117,8 +117,8 @@ function enableParallaxTilt(selector, shadowColor = 'rgba(0, 0, 0, 0.09)', maxTi
   }
 }
 
-// Apply parallax to hero photo with soft purple glow
-enableParallaxTilt('.hero-photo-wrap', 'rgba(125, 82, 230, 0.22)', 2);
+// Apply parallax to hero card with purple glow
+enableParallaxTilt('.hero-card', 'rgba(124, 58, 237, 0.25)');
 
 // Theme-based parallax for case study hero images
 // Consistent parallax: maxTilt=2 (smooth), theme-specific shadows
