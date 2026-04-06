@@ -348,7 +348,7 @@ body {
   width: 100%;
   aspect-ratio: 4/5;
   object-fit: cover;
-  object-position: center 15%;
+  object-position: center 35%;
   display: block;
 }
 .hero-available {
