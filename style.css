@@ -461,12 +461,14 @@ body {
 .about {
   background: var(--bg-subtle);
   border-block: 1px solid var(--border);
+  text-align: center;
 }
 
 .about-intro,
 .about-process,
 .about-personal {
   max-width: 680px;
+  margin-inline: auto;
 }
 
 .about-heading {
@@ -553,6 +555,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--sp-1);
+  text-align: left;
 }
 
 .process-methods li {
