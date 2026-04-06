@@ -526,6 +526,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--sp-3);
+  min-height: 280px;
+  justify-content: space-between;
 }
 
 .process-num {
