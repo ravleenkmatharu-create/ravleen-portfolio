@@ -342,7 +342,7 @@ body {
 }
 .hero-photo-wrap:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.06), 0 32px 72px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 12px rgba(125, 82, 230, 0.08), 0 32px 72px rgba(125, 82, 230, 0.14);
 }
 .hero-photo {
   width: 100%;
