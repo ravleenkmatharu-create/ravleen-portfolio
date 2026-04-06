@@ -461,7 +461,6 @@ body {
 .about {
   background: var(--bg-subtle);
   border-block: 1px solid var(--border);
-  text-align: center;
 }
 
 .about-intro,
@@ -555,7 +554,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--sp-1);
-  text-align: left;
 }
 
 .process-methods li {
