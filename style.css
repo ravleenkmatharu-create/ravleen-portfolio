@@ -149,9 +149,9 @@ body {
   color: var(--bg);
 }
 .btn-primary:hover {
-  background: #6D28D9;
+  background: #5B1DB0;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(109,40,217,0.25);
+  box-shadow: 0 8px 24px rgba(91,29,176,0.3);
 }
 
 .btn-ghost {
@@ -241,7 +241,7 @@ body {
   color: #FFFFFF;
 }
 .nav-links .btn-sm:hover {
-  background: #6D28D9;
+  background: #5B1DB0;
   transform: none;
   box-shadow: none;
 }
