@@ -1785,14 +1785,26 @@ body.theme-security .cs-hmw-statement:hover {
 /* ══════════════════════════════════════════════════════════════
    NAV BAR — Keep consistent purple across all case studies
    ══════════════════════════════════════════════════════════════ */
-.nav-link::after {
+body.theme-security,
+body.theme-eco,
+body.theme-fire {
+  --nav-accent: #7D52E6;
+}
+
+body.theme-security .nav-link::after,
+body.theme-eco .nav-link::after,
+body.theme-fire .nav-link::after {
   background: #7D52E6 !important;
 }
 
-.nav-links .btn-sm {
+body.theme-security .nav-links .btn-sm,
+body.theme-eco .nav-links .btn-sm,
+body.theme-fire .nav-links .btn-sm {
   background: #7D52E6 !important;
 }
 
-.nav-links .btn-sm:hover {
+body.theme-security .nav-links .btn-sm:hover,
+body.theme-eco .nav-links .btn-sm:hover,
+body.theme-fire .nav-links .btn-sm:hover {
   background: #6D3DD4 !important;
 }
