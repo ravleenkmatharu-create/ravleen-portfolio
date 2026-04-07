@@ -199,9 +199,10 @@ body {
   font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.02em;
-  transition: color var(--dur);
+  color: var(--accent);
+  transition: opacity var(--dur);
 }
-.nav-logo:hover { color: var(--accent); }
+.nav-logo:hover { opacity: 0.8; }
 
 .nav-links {
   display: flex;
@@ -231,10 +232,6 @@ body {
 .nav-link.active { color: var(--text); }
 .nav-link:hover::after,
 .nav-link.active::after { width: 100%; }
-
-.nav-logo:hover {
-  color: #7D52E6;
-}
 
 .nav-links .btn-sm {
   background: #7D52E6;
