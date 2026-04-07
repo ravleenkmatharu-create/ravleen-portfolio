@@ -1781,3 +1781,18 @@ body.theme-fire .cs-hmw-statement:hover {
 body.theme-security .cs-hmw-statement:hover {
   box-shadow: 0 4px 24px rgba(0, 30, 112, 0.10);
 }
+
+/* ══════════════════════════════════════════════════════════════
+   NAV BAR — Keep consistent purple across all case studies
+   ══════════════════════════════════════════════════════════════ */
+.nav-link::after {
+  background: #7D52E6 !important;
+}
+
+.nav-links .btn-sm {
+  background: #7D52E6 !important;
+}
+
+.nav-links .btn-sm:hover {
+  background: #6D3DD4 !important;
+}
