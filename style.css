@@ -526,15 +526,24 @@ body {
 }
 
 .process-card {
-  background: var(--bg-subtle);
+  background: var(--bg-card);
   padding: var(--sp-5) var(--sp-4);
   display: flex;
   flex-direction: column;
   gap: var(--sp-3);
   min-height: 300px;
-  justify-content: space-between;
+  justify-content: flex-start;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: all 0.3s var(--ease);
+  cursor: pointer;
+}
+
+.process-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
 }
 
 .process-num {
@@ -545,10 +554,12 @@ body {
 }
 
 .process-title {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--text);
   margin: 0;
+  display: inline;
+}
 }
 
 .process-methods {
@@ -560,6 +571,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--sp-1);
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s var(--ease), max-height 0.3s var(--ease);
+}
+
+.process-card:hover .process-methods {
+  opacity: 1;
+  max-height: 300px;
 }
 
 .process-methods li {
