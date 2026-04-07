@@ -538,7 +538,7 @@ body {
 }
 
 .process-num {
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--accent);
   letter-spacing: 0.1em;
